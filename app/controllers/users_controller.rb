@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   
   def index
     #render json: User.all
-    session[:id] = 123
+#    session[:id] = 123
     @user = User.all
   end
 
@@ -44,7 +44,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    logger.info("sessin is #{session[:id]}")
+#   logger.info("sessin is #{session[:id]}")
     @user = User.find_by(id: params[:id])
     if !@user
       api_err 86, "User does not exist"
@@ -55,7 +55,7 @@ class UsersController < ApplicationController
   def update
     @user =  user_can_change_info? 
     if !@user
-        api_err 20002, "User info only can be changed by self or admin user"
+      api_err 20002, "User info only can be changed by self or admin user"
     elsif !@user.update_attributes(update_params)
       api_err 20003, "User info update error!"
     end
