@@ -38,5 +38,9 @@ module WebscanApi
 #    config.session_store :cache_store
 #    config.action_controller.session_store :active_record_store, 
 
+#  ActiveRecord::SessionStore::Session.table_name = 'sessions'
+#  ActiveRecord::SessionStore::Session.primary_key = 'session_id'
+#  ActiveRecord::SessionStore::Session.data_column_name = 'sessions'
+#  ActiveRecord::SessionStore::Session.serializer = :json
   end
 end
