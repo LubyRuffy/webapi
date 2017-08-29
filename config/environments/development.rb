@@ -26,8 +26,10 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-#  config.action_controller.perform_caching = true
+  config.action_controller.perform_caching = true
 #  config.cache_store = :dalli_store
+  config.cache_store = :dalli_store, '127.0.0.1:11211',
+      { :namespace => "webscanapi", :expires_in => 5.minutes, :compress => true  }
 
 #  config.action_controller.perform_caching = true
 #  config.cache_store = :memory_store, { size: 64.megabytes  }

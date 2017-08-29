@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   
   def index
     #render json: User.all
+    session[:id] = 123
     @user = User.all
   end
 
@@ -43,6 +44,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    logger.info("sessin is #{session[:id]}")
     @user = User.find_by(id: params[:id])
     if !@user
       api_err 86, "User does not exist"

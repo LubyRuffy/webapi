@@ -8,27 +8,29 @@ class ApplicationController < ActionController::API
   end
 
   def update_session!(s)
-    @@session_cache[s] = Time.now 
+    #@@session_cache[s] = Time.now 
+    session[s] = Time.now 
   end
   
   def delete_session!(s)
-    @@session_cache.delete(s) 
+    #@@session_cache.delete(s) 
+    session[s] = nil 
   end
 
   # session_timeout?
   def session_timeout?
     session_info = request.query_parameters[:session]
     to_flag = true
-    logger.info("session_cache = #{@@session_cache[session_info]}")
-    if @@session_cache.key?(session_info)
-      timeOut = Time.now - @@session_cache[session_info]
+    logger.info("session_cache = #{session[session_info]}")
+    if session.key?(session_info)
+      timeOut = Time.now - session[session_info]
       if timeOut < 5*60
         to_flag = false
 
         #if not timeout , update the time.
-        @@session_cache[session_info] = Time.now
+        session[session_info] = Time.now
 
-        logger.info("timeOut < 5 min, update session to #{@@session_cache[session_info]}")
+        logger.info("timeOut < 5 min, update session to #{session[session_info]}")
       end
     end
     
@@ -40,6 +42,6 @@ class ApplicationController < ActionController::API
 
   def api_err(err_code, err_msg)
     render json: {err_code: err_code, err_msg:  err_msg}
-    logger.info("api_err session = #{@@session_cache}")
+    logger.info("api_err session = #{session}")
   end
 end
