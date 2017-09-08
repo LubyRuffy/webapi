@@ -1,0 +1,4103 @@
+################################################
+# id range      : 0~0xffff
+# desc bytes    : <256
+# desc_en bytes : <128
+################################################
+
+##################################
+## [VOS_ERROR_CODE = 0]
+## begin at hex :0x0000  dec :0
+##################################
+
+[0]
+id      = 0
+desc    = OK
+desc_en = OK
+
+[1]
+id      = 1
+desc    = ERROR Code
+desc_en = ERROR Code
+
+[2]
+id      = 2
+desc    = More Data
+desc_en = More Data
+
+[3]
+id      = 3
+desc    = 读失败
+desc_en = Read error
+
+[4]
+id      = 4
+desc    = 分配内存失败
+desc_en = Alloc memory failed
+
+[5]
+id      = 5
+desc    = 读文件错误
+desc_en = Read file error
+
+[6]
+id      = 6
+desc    = 写文件错误
+desc_en = Write file error
+
+[7]
+id      = 7
+desc    = 读socket错误
+desc_en = Read socket error
+
+[8]
+id      = 8
+desc    = 写socket错误
+desc_en = Write socket error
+
+[9]
+id      = 9
+desc    = 连接socket错误
+desc_en = Connect socket error
+
+[10]
+id      = 10
+desc    = 接口不存在
+desc_en = Interface does not exist
+
+[11]
+id      = 11
+desc    = 地址格式错误
+desc_en = Malformed address
+
+[12]
+id      = 12
+desc    = 设置接口IP失败
+desc_en = Set interface IP address failed
+
+[13]
+id      = 13
+desc    = 找不到IP地址
+desc_en = Can't find IP address
+
+[14]
+id      = 14
+desc    = 取消接口ip失败
+desc_en = Unset interface IP address failed
+
+[15]
+id      = 15
+desc    = ha运行期间不能配置备份接口
+desc_en = Can't config backup interface while ha is running
+
+[16]
+id      = 16
+desc    = ha接口不能与被监控接口相同
+desc_en = Can't config ha interface as monitor interface
+
+[17]
+id      = 17
+desc    = 内存不足
+desc_en = Malloc memory error
+
+[18]
+id      = 18
+desc    = 被监控接口不能与ha接口相同
+desc_en = Can't set monitor interface as ha interface
+
+[19]
+id      = 19
+desc    = 优先级被其它成员是占用
+desc_en = Priority is obtained by other member
+
+[20]
+id      = 20
+desc    = 没有配置ha接口
+desc_en = No config ha interface
+
+[21]
+id      = 21
+desc    = 没有配置监控接口
+desc_en = No config monitor interface
+
+[22]
+id      = 22
+desc    = ha状态错误
+desc_en = Ha state error
+
+[23]
+id      = 23
+desc    = 创建Socket失败
+desc_en = Socket create error
+
+[24]
+id      = 24
+desc    = 非法网关
+desc_en = Invalid gateway
+
+[25]
+id      = 25
+desc    = 不能删除绑定在vpn通道上阶段1的网关
+desc_en = Can not remove a binded gateway by tunnel
+
+[26]
+id      = 26
+desc    = 隧道名称冲突
+desc_en = conflicted tunnel name
+
+[27]
+id      = 27
+desc    = 不能删除绑定在防火墙上的隧道
+desc_en = Can not remove a binded tunnel by firewall
+
+[28]
+id      = 28
+desc    = 无效的隧道
+desc_en = Invalid tunnel
+
+[29]
+id      = 29
+desc    = 无效的阶段2的变换集
+desc_en = Invalid propasal
+
+[30]
+id      = 30
+desc    = 无效的阶段2IPSec通道
+desc_en = It's not tunnel in phase2
+
+[31]
+id      = 31
+desc    = 无效的手工IPSec通道
+desc_en = It's not tunnel in manual
+
+[32]
+id      = 32
+desc    = ha运行期间不能配置ha接口
+desc_en = Can't config ha interface while ha is running...
+
+[33]
+id      = 33
+desc    = 超过最大的SA建立数
+desc_en = Exceed Max crypto node
+
+[34]
+id      = 34
+desc    = 非法的主机地址
+desc_en = Invalid host address
+
+[35]
+id      = 35
+desc    = 地址与其它接口地址冲突
+desc_en = Address overlaps with other interface
+
+[36]
+id      = 36
+desc    = 找不到静态路由
+desc_en = Cannot get static route
+
+[37]
+id      = 37
+desc    = 手工隧道与策略绑定
+desc_en = Bind a manual tunnel to policy
+
+[38]
+id      = 38
+desc    = 没有指定用户
+desc_en = No specify user
+
+[39]
+id      = 39
+desc    = xml文件解析错误
+desc_en = Xml file parse error
+
+[40]
+id      = 40
+desc    = 下一跳超过限制数量
+desc_en = Too many nexthops
+
+[41]
+id      = 41
+desc    = 非法的IP地址
+desc_en = Invalid ip address
+
+[42]
+id      = 42
+desc    = 目标不存在 
+desc_en = Target missing
+
+[43]
+id      = 43
+desc    = 目标正在被使用(现在不能被删除) 
+desc_en = Target used now
+
+[44]
+id      = 44
+desc    = 接口类型错误
+desc_en = Invalid interface type
+
+[45]
+id      = 45
+desc    = 缺省网关超过限制数量
+desc_en = Too many defaut gateway
+
+[46]
+id      = 46
+desc    = 
+desc_en = HOLD
+
+[47]
+id      = 47
+desc    = 
+desc_en = HOLD
+
+[48]
+id      = 48
+desc    = 获取接口MTU失败
+desc_en = Failed to get mtu of interface
+
+[49]
+id      = 49
+desc    = IPv6接口的MTU最小值为1280
+desc_en = The min of the mtu on interface with IPv6 is 1280
+
+[50]
+id      = 50
+desc    = IP地址错误 
+desc_en = Bad ip address
+
+[51]
+id      = 51
+desc    = MAC地址错误
+desc_en = Bad mac address
+
+[52]
+id      = 52
+desc    = 没有找到该接口
+desc_en = The interface is not found
+
+[53]
+id      = 53
+desc    = 该接口已被设置为dhcp中继代理
+desc_en = The interface is set dhcp relay
+
+[54]
+id      = 54
+desc    = 该接口已被设置为dhcp服务器
+desc_en = The interface is set dhcp server
+
+[55]
+id      = 55
+desc    = 该接口已经运行dhcp客户端
+desc_en = The interface is running dhcp client
+
+[56]
+id      = 56
+desc    = 该接口已经运行dhcp中继代理
+desc_en = The interface is running dhcp relay
+
+[57]
+id      = 57
+desc    = 接口上启用dhcp中继代理失败
+desc_en = Start dhcp relay failed on interface
+
+[58]
+id      = 58
+desc    = 接口上启用dhcp客户端失败
+desc_en = Start dhcp client failed on interface
+
+[59]
+id      = 59
+desc    = 接口上启用dhcp服务失败
+desc_en = Start dhcp server failed
+
+[60]
+id      = 60
+desc    = dhcp服务器正在运行
+desc_en = Dhcp server is already running
+
+[61]
+id      = 61
+desc    = dhcp服务器配置错误
+desc_en = Dhcp server no config or config is incorrect
+
+[62]
+id      = 62
+desc    = 子网没有配置subnet
+desc_en = Share-net has no subnet
+
+[63]
+id      = 63
+desc    = 子网没有配置地址池
+desc_en = Share-net has no pool
+
+[64]
+id      = 64
+desc    = 名称的最大长度是64
+desc_en = The max length of the name is 64
+
+[65]
+id      = 65
+desc    = 配置最大项是100
+desc_en = The max number of item is 100
+
+[66]
+id      = 66
+desc    = 子网与地址池不匹配
+desc_en = The subnet does not match the pool
+
+[67]
+id      = 67
+desc    = 地址池错误
+desc_en = Incorrect address pool
+
+[68]
+id      = 68
+desc    = 地址池冲突
+desc_en = Reduplicate pool
+
+[69]
+id      = 69
+desc    = 每个子网只支持一个地址池
+desc_en = Already has one pool, we support one pool
+
+[70]
+id      = 70
+desc    = 请输入租期：天 小时 分 
+desc_en = Please input the lease time: days, hours and minutes
+
+[71]
+id      = 71
+desc    = 地址租约范围5分钟到100天
+desc_en = Valid lease is 5 minutes to 100 days
+
+[72]
+id      = 72
+desc    = 地址池范围超过B类地址
+desc_en = The pool is too bigger than 1 B class networks
+
+[73]
+id      = 73
+desc    = IP地址的数量超过最大限制(327680)
+desc_en = The number of ip addresses exceed limits (327680)
+
+[74]
+id      = 74
+desc    = 该mac已经被绑定
+desc_en = The mac has be bound
+
+[75]
+id      = 75
+desc    = 该IP已经被绑定
+desc_en = The IP has be bound
+
+[76]
+id      = 76
+desc    = 地址池IP不能是网络地址或广播地址
+desc_en = The IP cannot be network address or broadcast address
+
+[77]
+id      = 77
+desc    = 错误的子网
+desc_en = Incorrect subnet
+
+[78]
+id      = 78
+desc    = 配置最大项是4096 
+desc_en = The max number of item is 4096
+
+[79]
+id      = 79
+desc    =  end of dhcp message 
+desc_en = DHCP HOLD
+
+[80]
+id      = 80
+desc    = 该授权表已经存在
+desc_en = Already have a same authorized table
+
+[81]
+id      = 81
+desc    = 该授权表不存在
+desc_en = The authorized table doesn't exist
+
+[82]
+id      = 82
+desc    = 该授权表正在被使用，不能删除
+desc_en = The authorized table is in used ,cannot be delete!
+
+[83]
+id      = 83
+desc    = 该授权表是默认表，不能被删除
+desc_en = The authorized table is default table ,cannot be delete!
+
+[84]
+id      = 84
+desc    = 别名重复
+desc_en = Aliasname duplite with other aliasname
+
+[85]
+id      = 85
+desc    = 别名与接口实名相同
+desc_en = Aliasname duplite with interface name
+
+[86]
+id      = 86
+desc    = 该用户不存在
+desc_en = User does not exist
+
+[87]
+id      = 87
+desc    = 目标策略不存在 
+desc_en = Taget policy doesn't exist
+
+[88]
+id      = 88
+desc    = 参考策略不存在
+desc_en = Reference policy does not exist
+
+[89]
+id      = 89
+desc    = 目标策略已经存在
+desc_en = Taget policy is already existed
+
+[90]
+id      = 90
+desc    = 出接口或入接口不存在
+desc_en = Interface in or out does not exist
+
+[91]
+id      = 91
+desc    = 出接口或入接口已经和网桥接口绑定
+desc_en = Interface in or out has been bind to a bridge already
+
+[92]
+id      = 92
+desc    = 入接口被包含在安全域里
+desc_en = Interface in is included in a security zone
+
+[93]
+id      = 93
+desc    = 出接口被包含在安全域里
+desc_en = Interface out is included in a security zone
+
+[94]
+id      = 94
+desc    = 源地址不存在
+desc_en = Source address does not exist
+
+[95]
+id      = 95
+desc    = 目的地址不存在
+desc_en = Destination address does not exist
+
+[96]
+id      = 96
+desc    = 服务不存在
+desc_en = Service does not exist
+
+[97]
+id      = 97
+desc    = 时间范围不存在
+desc_en = Time range does not exist
+
+[98]
+id      = 98
+desc    = 策略定义在不同接口对下，不能改变顺序
+desc_en = Policies are not in the same interface pair
+
+[99]
+id      = 99
+desc    = 用户组不存在
+desc_en = Group does not exist
+
+[100]
+id      = 100
+desc    = 用户和用户组都不存在
+desc_en = User and group does not exist
+
+[101]
+id      = 101
+desc    = radius服务器不存在
+desc_en = Radius-server does not exist
+
+[102]
+id      = 102
+desc    = 名称超长
+desc_en = The length of Name is too long
+
+[103]
+id      = 103
+desc    = 字符长度超过最长限制
+desc_en = Invalid length of string 
+
+[104]
+id      = 104
+desc    = 对象正被使用，无法删除
+desc_en = The object is being used, can't delete
+
+[105]
+id      = 105
+desc    = 对象数量已达到最大限制
+desc_en = Objects number reach the maximum
+
+[106]
+id      = 106
+desc    = 名称冲突
+desc_en = Conflict object
+
+[107]
+id      = 107
+desc    = 对象名称不存在
+desc_en = The object name does not exist
+
+[108]
+id      = 108
+desc    = 该接口被包含在安全域中或者与策略相关
+desc_en = The interface configuration collided
+
+[109]
+id      = 109
+desc    = 名称错误
+desc_en = The name is unavailable
+
+[110]
+id      = 110
+desc    = IP地址错误
+desc_en = Bad ip address
+
+[111]
+id      = 111
+desc    = 对象类型错误
+desc_en = The object type is wrong
+
+[112]
+id      = 112
+desc    = 服务字符串错误
+desc_en = The service string can not be parsed
+
+[113]
+id      = 113
+desc    = 时间范围错误
+desc_en = The time range is wrong
+
+[114]
+id      = 114
+desc    = 描述或名称超长
+desc_en = The name or description is too long
+
+[115]
+id      = 115
+desc    = 目标已经存在
+desc_en = Target is already existed
+
+[116]
+id      = 116
+desc    = 非法的MAC地址
+desc_en = Invalid Mac address
+
+[117]
+id      = 117
+desc    = 地址名称不能为any
+desc_en = Can't set the address any
+
+[118]
+id      = 118
+desc    = 非法的手工密钥
+desc_en = Invalid maunal key
+
+[119]
+id      = 119
+desc    = VPN隧道名称超长
+desc_en = Vpn tunnel name is too long
+
+[120]
+id      = 120
+desc    = 终止IP应大于起始IP
+desc_en = End ip must larger than start ip for l2tp peer ip pool
+
+[121]
+id      = 121
+desc    = 策略数量已达到最大限制
+desc_en = Policy number reach the maximum
+
+[122]
+id      = 122
+desc    = 该策略已经存在
+desc_en = The same policy existed already
+
+[123]
+id      = 123
+desc    = 出接口和入接口被设置在不同桥组中
+desc_en = Interface in and out have been set to different bridges
+
+[124]
+id      = 124
+desc    = 备份dns服务器地址与首选dns服务器地址相同
+desc_en = Master dns server address overlapped with backup
+
+[125]
+id      = 125
+desc    = 测试dns服务器失败
+desc_en = Test dns server failed
+
+[126]
+id      = 126
+desc    = IP地址已被绑定
+desc_en = IP address already bind
+
+[127]
+id      = 127
+desc    = MAC地址已经被绑定
+desc_en = Mac address already bind
+
+[128]
+id      = 128
+desc    = 主接口已经被设置为桥
+desc_en = Failed , for the master interface has be set to bridge
+
+[129]
+id      = 129
+desc    = DNS解析错误，请稍后再试
+desc_en = DNS resolve failed,retry it later
+
+[130]
+id      = 130
+desc    = 别名与安全域名称冲突
+desc_en = Aliasname conflict with zone name
+
+[131]
+id      = 131
+desc    = SSLVPN服务没有开启
+desc_en = SSLVPN service dosen't enable
+
+[132]
+id      = 132
+desc    = 设置SSLVPN服务端口失败
+desc_en = Set SSVLPN service port failed
+
+[133]
+id      = 133
+desc    = 终止IP必须大于起始IP
+desc_en = IP RANGE:start ip must not exceed end ip
+
+[134]
+id      = 134
+desc    = 地址范围不能超过65535
+desc_en = IP RANGE must not exceed 65535
+
+[135]
+id      = 135
+desc    = 版本文件不存在
+desc_en = No version file found
+
+[136]
+id      = 136
+desc    = 没有空间执行该操作
+desc_en = No space to perform this operation
+
+[137]
+id      = 137
+desc    = 无效的系统升级文件
+desc_en = Invalid magic number in version file
+
+[138]
+id      = 138
+desc    = 版本文件的CRC校验失败
+desc_en = CRC check error for version file
+
+[139]
+id      = 139
+desc    = 保存版本文件失败
+desc_en = Cannot store version file to disk
+
+[140]
+id      = 140
+desc    = 接口被桥接口引用
+desc_en = Interface used by bridge
+
+[141]
+id      = 141
+desc    = 接口被安全域引用
+desc_en = Interface used by security zone
+
+[142]
+id      = 142
+desc    = 接口被业务引用
+desc_en = Interface used by service policy
+
+[143]
+id      = 143
+desc    = 接口被策略路由引用
+desc_en = Interface used by policy route
+
+[144]
+id      = 144
+desc    = 接口被NAT引用
+desc_en = Interface used by NAT
+
+[145]
+id      = 145
+desc    = 用户名不是当前用户
+desc_en = Username is not the current user
+
+[146]
+id      = 146
+desc    = radius或ldap用户不能修改密码
+desc_en = RADIUS or LDAP user can't change password
+
+[147]
+id      = 147
+desc    = 旧密码和用户密码不符
+desc_en = Old password is wrong
+
+[148]
+id      = 148
+desc    = radius服务器和用户组不存在
+desc_en = This radius-server and group does not exist
+
+[149]
+id      = 149
+desc    = 不能更改用户组的类型
+desc_en = Can't change usergroup's type
+
+[150]
+id      = 150
+desc    = 非法的手工隧道
+desc_en = Invalid manual tunnel
+
+[151]
+id      = 151
+desc    = 接口配置冲突
+desc_en = Interface config collided
+
+[152]
+id      = 152
+desc    = 接口名称与别名冲突
+desc_en = Interface name duplite with aliasname
+
+[153]
+id      = 153
+desc    = 接口名称与安全域名称冲突
+desc_en = Interface name duplite with security zone name
+
+[154]
+id      = 154
+desc    = 用户不在该组中
+desc_en = This user is not in the group
+
+[155]
+id      = 155
+desc    = 读socket错误
+desc_en = Read socket error
+
+[156]
+id      = 156
+desc    = 写socket错误
+desc_en = Write socket error
+
+[157]
+id      = 157
+desc    = smtp base64编码错误
+desc_en = Smtp base64 encode error
+
+[158]
+id      = 158
+desc    = smtp配置错误
+desc_en = Smtp config error
+
+[159]
+id      = 159
+desc    = 查找主机名失败
+desc_en = Find host by name error
+
+[160]
+id      = 160
+desc    = 与服务器连接错误
+desc_en = Connect to server error
+
+[161]
+id      = 161
+desc    = smtp接收到错误的信息
+desc_en = Smtp receive error message
+
+[162]
+id      = 162
+desc    = 辅IP个数超过限制
+desc_en = Too many secondary IP address
+
+[163]
+id      = 163
+desc    = 不允许设置超过4096个ip
+desc_en = Not allowed set ip counts larger than 4096
+
+[164]
+id      = 164
+desc    = 
+desc_en = Session Hold
+
+[165]
+id      = 165
+desc    = 
+desc_en = Session Hold
+
+[166]
+id      = 166
+desc    = 
+desc_en = Session Hold
+
+[167]
+id      = 167
+desc    = 
+desc_en = Session Hold
+
+[168]
+id      = 168
+desc    = 虚拟防火墙与HA 配置冲突
+desc_en = Session Hold
+
+[169]
+id      = 169
+desc    = HA 已经配置了抢占模式
+desc_en = Ha is already under grob_style
+
+[170]
+id      = 170
+desc    = 端口范围错误
+desc_en = Bad input PORT range
+
+[171]
+id      = 171
+desc    = 端口错误
+desc_en = Bad input PORT
+
+[172]
+id      = 172
+desc    = IP范围错误
+desc_en = Bad input IP range
+
+[173]
+id      = 173
+desc    = IP掩码错误
+desc_en = Bad input IP mask
+
+[174]
+id      = 174
+desc    = IP地址错误
+desc_en = Bad input IP address
+
+[175]
+id      = 175
+desc    = 系统限制值必须大于协议限制值
+desc_en = System limit must larger than the same in protocol
+
+[176]
+id      = 176
+desc    = 上限值应大于下限值
+desc_en = High limit must larger than low limit
+
+[177]
+id      = 177
+desc    = 半连接上限值必须大于除总连接限制之外的其它限制值
+desc_en = Halfopen high limit must larger than other except sum limit
+
+[178]
+id      = 178
+desc    = 连接总数限制值必须是最大值
+desc_en = Sum limit must be largest
+
+[179]
+id      = 179
+desc    = 会话与内核通讯失败
+desc_en = Session can not communicate with kernel
+
+[180]
+id      = 180
+desc    = 会话内部错误
+desc_en = Session inner error
+
+[181]
+id      = 181
+desc    = Email地址格式错误
+desc_en = Email address format error
+
+[182]
+id      = 182
+desc    = 名称或描述中不能包含空格
+desc_en = Name/Description string cannot include space
+
+[183]
+id      = 183
+desc    = 该命令只能在主模式下运行
+desc_en = This command can only be run under master state
+
+[184]
+id      = 184
+desc    = HA已经处于停止状态
+desc_en = Ha is already under standby state
+
+[185]
+id      = 185
+desc    = VLAN接口数目已经超过最大值
+desc_en = VLAN interface counter exceed max number
+
+[186]
+id      = 186
+desc    = 静态路由数目超过最大值
+desc_en = Static routes reached the limit
+
+[187]
+id      = 187
+desc    = 导入文件错误
+desc_en = Import file error.
+
+[188]
+id      = 188
+desc    = 升级库错误
+desc_en = Update library error.
+
+[189]
+id      = 189
+desc    = 升级库的URL格式错误，应该为http://..../...
+desc_en = Update server URL error
+
+[190]
+id      = 190
+desc    = 设置的邮件发送间隔不在范围之内<1-60>
+desc_en = Set smtp send interval error
+
+[191]
+id      = 191
+desc    = 不能删除默认管理员'admin'
+desc_en = Default administator 'admin' can not be delete
+
+[192]
+id      = 192
+desc    = 不能删除默认权限表'admin'
+desc_en = Default authority-table 'admin' can not be delete
+
+[193]
+id      = 193
+desc    = IP地址格式错误
+desc_en = IP address format error
+
+[194]
+id      = 194
+desc    = 库格式错误
+desc_en = library format error
+
+[195]
+id      = 195
+desc    = 系统配置文件格式错误
+desc_en = System config file format error
+
+[196]
+id      = 196
+desc    = NAT 地址池数目已到限制值
+desc_en = The number of NAT pool exceed the limit
+
+[197]
+id      = 197
+desc    = 接口被GRE接口引用
+desc_en = Interface used by GRE
+
+[198]
+id      = 198
+desc    = 保存配置失败
+desc_en = Save config failed
+
+[199]
+id      = 199
+desc    = 恢复出场设置失败
+desc_en = Renew default config failed
+
+[200]
+id      = 200
+desc    = 设备正在操作存储设备，升级失败，请稍候重试
+desc_en = Disk busy, please retry later
+
+[201]
+id      = 201
+desc    = 接口有vlan子接口不能加入桥组
+desc_en = please remove it's child vlan interface first 
+
+[202]
+id      = 202
+desc    = 入/出接口名称不能为any
+desc_en = Not support that the interface is any
+
+[203]
+id      = 203
+desc    = VLAN ID已经被使用
+desc_en = VLAN ID is used 
+
+[204]
+id      = 204
+desc    = 配置文件格式错误
+desc_en = Config file format error
+
+[205]
+id      = 205
+desc    = 加入桥组的vlan id必须一致
+desc_en = VLAN id must be same
+
+[206]
+id      = 206
+desc    = 组已经存在
+desc_en = This usergroup existed already
+
+[207]
+id      = 207
+desc    = 无效的密钥值
+desc_en = Invalid encryption keys
+
+[208]
+id      = 208
+desc    = 无效的License
+desc_en = Invalid license
+
+[209]
+id      = 209
+desc    = 特征格式无效
+desc_en = Signature formate is invalid
+
+[210]
+id      = 210
+desc    = 该功能没被允许， 因为License 无效或过期
+desc_en = Can't execute for the license is invalid or expired.
+
+[211]
+id      = 211
+desc    = 库文件起始版本和系统内的版本不匹配
+desc_en = New av lib first version's num is not match with system's
+
+[212]
+id      = 212
+desc    = 用户名已经存在
+desc_en = This administrator already exist
+
+[213]
+id      = 213
+desc    = 配辅IP的时候需要配置主IP
+desc_en = Main IP address needed
+
+[214]
+id      = 214
+desc    = 设置WebAuth服务端口失败，指定的TCP端口已经在使用
+desc_en = Set WebAuth service port failed, cann't assign a used tcp port!
+
+[215]
+id      = 215
+desc    = 密码为空
+desc_en = Empty password
+
+[216]
+id      = 216
+desc    = Radius 服务器为空
+desc_en = Empty radius server
+
+[217]
+id      = 217
+desc    = NAT 规则数目已到限制值
+desc_en = The number of NAT rule exceed the limit
+
+[218]
+id      = 218
+desc    = 相同的NAT 规则已存在
+desc_en = Same NAT rule already existed
+
+[219]
+id      = 219
+desc    = 接口为ha接口不能加入桥组
+desc_en = Can't add hainterface as bridge port
+
+[220]
+id      = 220
+desc    = 该隧道不支持any 地址
+desc_en = The granularity of address is too large,we cannot support it!
+
+[221]
+id      = 221
+desc    = 入侵防御特征库格式错误
+desc_en = Error IPS library format
+
+[222]
+id      = 222
+desc    = 防病毒特征库错误
+desc_en = Error AV library format
+
+[223]
+id      = 223
+desc    = 这是一个不安全的密钥值,至少6 个字符
+desc_en = This is an insecure secret value (at least 6 characters)
+
+[224]
+id      = 224
+desc    = 更新操作太频繁，请稍候再试
+desc_en = Interval between twice update operation
+
+[225]
+id      = 225
+desc    = OSPF 没有运行
+desc_en = OSPF isn't enabled
+
+[226]
+id      = 226
+desc    = 已经存在相同的配置名称
+desc_en = There is already same configuration name
+
+[227]
+id      = 227
+desc    = 存在 相同的KEY-ID
+desc_en = OSPF: Key-ID already exists
+
+[228]
+id      = 228
+desc    = 指定的KEY-ID不存在
+desc_en = OSPF: Key-ID does not exist
+
+[229]
+id      = 229
+desc    = 没有这个接口地址
+desc_en = No such interface address
+
+[230]
+id      = 230
+desc    = 错误的区域ID
+desc_en = Bad Area-ID
+
+[231]
+id      = 231
+desc    = Metric值必须在1-16777214之间
+desc_en = Metric must be in <1-16777214>
+
+[232]
+id      = 232
+desc    = 优先级值必须在0-255之间
+desc_en = Priority value must be in <0-255>
+
+[233]
+id      = 233
+desc    = 值必须在0-65535之间
+desc_en = Value must be in <0-65535>
+
+[234]
+id      = 234
+desc    = 值必须在1-65535之间
+desc_en = Value must be in <1-65535>
+
+[235]
+id      = 235
+desc    = 值必须在3-65535之间
+desc_en = Value must be in <3-65535>
+
+[236]
+id      = 236
+desc    = RIP没有运行
+desc_en = RIP isn't enable
+
+[237]
+id      = 237
+desc    = Metric值必须在1-16之间
+desc_en = Metric must be in <1-16>
+
+[238]
+id      = 238
+desc    = 时间值必须在5-2147483647之间
+desc_en = Time value must be in <5-2147483647>
+
+[239]
+id      = 239
+desc    = 已存在相同的网络配置
+desc_en = There is a same network configuration
+
+[240]
+id      = 240
+desc    = 没有这个网络配置
+desc_en = Can't find network configuration
+
+[241]
+id      = 241
+desc    = 重发布类型错误
+desc_en = Invalid redistribute type
+
+[242]
+id      = 242
+desc    = 接口名称错误
+desc_en = Interface name error
+
+[243]
+id      = 243
+desc    = RIPv2认证字符串长度要小于等于16
+desc_en = RIPv2 authentication string must be shorter than 16
+
+[244]
+id      = 244
+desc    = 密码长度不能大于38
+desc_en = Key length must be less than 39
+
+[245]
+id      = 245
+desc    = 密码长度不能小于8
+desc_en = Key length must be more than 7
+
+[246]
+id      = 246
+desc    = 最多可配置10个用户
+desc_en = Usm user number must be less than 11
+
+[247]
+id      = 247
+desc    = 目标ip地址不能超过10项
+desc_en = Destination IP address must be less than 10
+
+[248]
+id      = 248
+desc    = 没有配置dns服务器
+desc_en = Dns server config empty
+
+[249]
+id      = 249
+desc    = 事件集名称冲突
+desc_en = Set name collided
+
+[250]
+id      = 250
+desc    = 参数错误
+desc_en = Invalid parameters
+
+[251]
+id      = 251
+desc    = Dead 间隔时间应当大于Hello间隔时间 
+desc_en = Dead-interval must bigger than hello-interval
+
+[252]
+id      = 252
+desc    = IDS联动端口必须在3000-65535之间
+desc_en = IDS Listen port must be in <3000-65535>
+
+[253]
+id      = 253
+desc    = 正在自动升级AV/IPS
+desc_en = The ips/av is updating
+
+[254]
+id      = 254
+desc    = 入侵检测引擎错误
+desc_en = Error DT format
+
+[255]
+id      = 255
+desc    = 重复的DDNS域名
+desc_en = Duplicate domain for DDNS
+
+[256]
+id      = 256
+desc    = 收件人不存在
+desc_en = Not found the receiver
+
+[257]
+id      = 257
+desc    = 正在加载查毒引擎，请稍后重试
+desc_en = AV engine is initializing , please try again later
+
+[258]
+id      = 258
+desc    = 当前设备类型不支持卡巴斯基查毒引擎
+desc_en = Current Device Type can not support AV engine of Kasperskey
+
+[259]
+id      = 259
+desc    = 
+desc_en = HOLD
+
+[260]
+id      = 260
+desc    = 会话不存在
+desc_en = Session isn't exist
+
+[261]
+id      = 261
+desc    = 登录失败,WEB管理员登陆用户已超过最大数
+desc_en = Login failed, the num of user is over the max
+
+[262]
+id      = 262
+desc    = 该IP地址重试次数太多，暂时被禁用
+desc_en = Login failed, the retry of user is over the max
+
+[263]
+id      = 263
+desc    = 系统启用了管理员唯一性检测, 目前已有管理员登录
+desc_en = The administrator has already login
+
+[264]
+id      = 264
+desc    = 登录用户没有操作权限
+desc_en = No authorization
+
+[265]
+id      = 265
+desc    = IP地址为非法地址
+desc_en = IP is invalid
+
+[266]
+id      = 266
+desc    = 密码错误
+desc_en = Password is incorrect
+
+[267]
+id      = 267
+desc    = 验证失败
+desc_en = Failed to authen
+
+[268]
+id      = 268
+desc    = 升级文件路径错误
+desc_en = Error file path for update
+
+[269]
+id      = 269
+desc    = 配置文件为空
+desc_en = The configuration file is empty
+
+[270]
+id      = 270
+desc    = 策略的接口对不能修改
+desc_en = Can't edit the interface pair
+
+[271]
+id      = 271
+desc    = 自定义事件名称冲突
+desc_en = Custom name collided
+
+[272]
+id      = 272
+desc    = 证书已经存在
+desc_en = Certificate existed already
+
+[273]
+id      = 273
+desc    = 证书不存在
+desc_en = Certificate does not exist
+
+[274]
+id      = 274
+desc    = 不能加载证书文件
+desc_en = Cannot load Certificate file
+
+[275]
+id      = 275
+desc    = 不支持这种证书文件格式
+desc_en = Not support that Certificat file format
+
+[276]
+id      = 276
+desc    = 不能分解该PKCS12
+desc_en = Cannot disassemble this PKCS12 file
+
+[277]
+id      = 277
+desc    = 证书和私钥文件不匹配
+desc_en = Certificate Cannot match this private key file.
+
+[278]
+id      = 278
+desc    = 证书名称过长
+desc_en = Certificate name is too long.
+
+[279]
+id      = 279
+desc    = 不能加载私钥文件
+desc_en = Cannot load private key file
+
+[280]
+id      = 280
+desc    = 不是CA证书
+desc_en = It is not a CA Certificate
+
+[281]
+id      = 281
+desc    = 文件已经存在
+desc_en = File existed already
+
+[282]
+id      = 282
+desc    = 上传文件失败
+desc_en = Upload file failed
+
+[283]
+id      = 283
+desc    = 文件太大
+desc_en = File is too large
+
+[284]
+id      = 284
+desc    = Base64解码错误
+desc_en = Base64 decode error
+
+[285]
+id      = 285
+desc    = 写文件错误
+desc_en = Write to file error
+
+[286]
+id      = 286
+desc    = 错误的Email地址
+desc_en = Bad email address
+
+[287]
+id      = 287
+desc    = 证书名称保留给USBKEY
+desc_en = Certificate name is hold for USBKEY
+
+[288]
+id      = 288
+desc    = 写USBKEY失败
+desc_en = Write to USBKEY fialed
+
+[289]
+id      = 289
+desc    = 不能加载公钥
+desc_en = Cannot load public Key
+
+[290]
+id      = 290
+desc    = 读缓冲区错误
+desc_en = Read buffer error
+
+[291]
+id      = 291
+desc    = 目标服务器列表空
+desc_en = Server ip list is empty
+
+[292]
+id      = 292
+desc    = 保存邮件失败
+desc_en = Failed to download mail
+
+[293]
+id      = 293
+desc    = 资源组不存在
+desc_en = This resource group is not exist
+
+[294]
+id      = 294
+desc    = 资源不存在
+desc_en = This resource is not exist
+
+[295]
+id      = 295
+desc    = 资源和资源组都不存在
+desc_en = Both the resource and resource-group are not exit
+
+[296]
+id      = 296
+desc    = 此资源已经存在
+desc_en = The resource already exist
+
+[297]
+id      = 297
+desc    = 此资源不在本资源组中
+desc_en = This resource is not in the resource group
+
+[298]
+id      = 298
+desc    = 用户组已存在
+desc_en = The usergroup already exist
+
+[299]
+id      = 299
+desc    = 指定的用户组本来就不能访问此资源组
+desc_en = The appointed usergoup cannot access the resource-group
+
+[300]
+id      = 300
+desc    = 此操作系统检查项不存在
+desc_en = This os-check item does not exist
+
+[301]
+id      = 301
+desc    = 此运行进程检查项不存在
+desc_en = This task-check item does not exist
+
+[302]
+id      = 302
+desc    = 此资源组已存在
+desc_en = This resource-group already exist
+
+[303]
+id      = 303
+desc    = 此操作系统检查项已存在
+desc_en = This os-check item already exist
+
+[304]
+id      = 304
+desc    = 此运行进程检查项已存在
+desc_en = This task-check item already exist
+
+[305]
+id      = 305
+desc    = 同名IKE 第一阶段已存在
+desc_en = This ike phsase1 name already exist
+
+[306]
+id      = 306
+desc    = 同名隧道已存在
+desc_en = This tunnel name already exist
+
+[307]
+id      = 307
+desc    = 同名手动模式隧道已存在
+desc_en = This manual tunnel name already exist
+
+[308]
+id      = 308
+desc    = 不能添加和预置的操作系统检查项同名的项
+desc_en = Cannot add preset os-check item
+
+[309]
+id      = 309
+desc    = OSPF无法启动，没有设置接口IP作为router ID
+desc_en = There must be at least one "up" IP interface, for OSPF to use as router ID
+
+[310]
+id      = 310
+desc    = 此进程已被使用
+desc_en = Process is in use
+
+[311]
+id      = 311
+desc    = 此服务已被使用
+desc_en = Service is in use
+
+[312]
+id      = 312
+desc    = 桥组号与其他桥组冲突
+desc_en = Bridge group duplite with another bridge
+
+[313]
+id      = 313
+desc    = Router-ID被占用,请指定其他的Router-ID
+desc_en = The Router ID is in use , please specify another Router ID
+
+[314]
+id      = 314
+desc    = 同名用户已经存在
+desc_en = The user already exist
+
+[315]
+id      = 315
+desc    = 模式串数量已达到最大限制
+desc_en = Pattern number reach the maximum
+
+[316]
+id      = 316
+desc    = 设备正在操作存储设备，请稍候重试
+desc_en = Disk busy, please retry later
+
+[317]
+id      = 317
+desc    = 主机名不能为空
+desc_en = Hostname cannot to be NULL
+
+[318]
+id      = 318
+desc    = 设备与内核通信失败
+desc_en = Cannot communicate with kernel
+
+[319]
+id      = 319
+desc    = 接口被防ARP攻击引用
+desc_en = Interface used by Anti-ARP
+
+[320]
+id      = 320
+desc    = 防ARP攻击主动保护列表重复
+desc_en = ARP broadcast list exist
+
+[321]
+id      = 321
+desc    = 防ARP攻击主动保护列表冲突
+desc_en = ARP broadcast list conflict
+
+[322]
+id      = 322
+desc    = 防ARP攻击操作失败
+desc_en = Anti-ARP config error
+
+[323]
+id      = 323
+desc    = 由于没有配置服务器反垃圾邮件启动失败
+desc_en = Enable failed for no smtp server's configuration
+
+[324]
+id      = 324
+desc    = 打开CA根证书错误
+desc_en = Load CA certificate err
+
+[325]
+id      = 325
+desc    = 打开CA私钥错误
+desc_en = Load CA private key err
+
+[326]
+id      = 326
+desc    = 所输入的证书或请求名称不存在
+desc_en = There's no this name in certificate list
+
+[327]
+id      = 327
+desc    = 请求名称已经存在
+desc_en = The request name is exist
+
+[328]
+id      = 328
+desc    = crl文件不存在
+desc_en = The crl file is not  exist
+
+[329]
+id      = 329
+desc    = SSL SITIE-TO-SITE 网关已经存在
+desc_en = Ssl site-to-site gateway already exist
+
+[330]
+id      = 330
+desc    = 新建主动保护不能为空
+desc_en = Create empty ARP broadcast list
+
+[331]
+id      = 331
+desc    = 该ldap server正在被使用，不能删除
+desc_en = The ldap server is used ,cannot be delete!
+
+[332]
+id      = 332
+desc    = ldap服务器不存在
+desc_en = This ldap-server does not exist
+
+[333]
+id      = 333
+desc    = 防ARP攻击主动保护列表数超限
+desc_en = ARP broadcast list max config 100 under one interface
+
+[334]
+id      = 334
+desc    = SSL 隧道模式路由已经存在
+desc_en = Ssl tunnel routenet already exist
+
+[335]
+id      = 335
+desc    = 没有CA证书
+desc_en = Can't find the CA certificate
+
+[336]
+id      = 336
+desc    = 密码长度太短最少6个字符
+desc_en = Password too short, must longer than 5
+
+[337]
+id      = 337
+desc    = 密码太简单，必须包括数字，英文和字符，其中的字符包括(!@#$%&`,-.?)
+desc_en = Password too simple, must have number(0-9), alpha(a-z,A-Z), characters(!@#$%&`,-.?)
+
+[338]
+id      = 338
+desc    = HTTP URL 格式错误
+desc_en = Crl http server url format error
+
+[339]
+id      = 339
+desc    = ldap 测试成功
+desc_en = ldap test success
+
+[340]
+id      = 340
+desc    = ldap 测试失败
+desc_en = ldap test failed
+
+[341]
+id      = 341
+desc    = ldap 测试出错
+desc_en = ldap test error
+
+[342]
+id      = 342
+desc    = 该命令仅在HA主备模式有效
+desc_en = This command can only be run under ha backup-master mode
+
+[343]
+id      = 343
+desc    = 用户证书名称不能与CA证书名称相同
+desc_en = Certificate common name is same as CA
+
+[344]
+id      = 344
+desc    = 自动获得crl配置已存在
+desc_en = The get crl config name exist
+
+[345]
+id      = 345
+desc    = 路由设置错误
+desc_en = mroute set error
+
+[346]
+id      = 346
+desc    = 目标服务器不能超过三项
+desc_en = Server number must be less than 4
+
+[347]
+id      = 347
+desc    = 目标服务器已经存在
+desc_en = Server IP is exist
+
+[348]
+id      = 348
+desc    = IP地址已经在白名单中
+desc_en = IP address is already in the white list
+
+[349]
+id      = 349
+desc    = IP地址已经在黑名单中
+desc_en = IP address is already in the black list
+
+[350]
+id      = 350
+desc    = 邮件地址已经在白名单中
+desc_en = Mail address is already in the white list
+
+[351]
+id      = 351
+desc    = 邮件地址已经在黑名单中
+desc_en = Mail address is already in the black list
+
+[352]
+id      = 352
+desc    = 该多播路由已经存在
+desc_en = Multi address is already exist
+
+[353]
+id      = 353
+desc    = 没有插入外置CF卡
+desc_en = CF card doesn't exist
+
+[354]
+id      = 354
+desc    = 没有插入外置USB存储器
+desc_en = USB doesn't exist
+
+[355]
+id      = 355
+desc    = 列表长度超过最大限制
+desc_en = List length exceed the limit
+
+[356]
+id      = 356
+desc    = 该多播路由不存在
+desc_en = Multi route doesn't exist
+
+[357]
+id      = 357
+desc    = 该多播路由不包含该接口
+desc_en = This multi route doesn't contain the interface
+
+[358]
+id      = 358
+desc    = 该接口不存在或者不可用于多播路由
+desc_en = The interface does't exist or can't be used for mroute 
+
+[359]
+id      = 359
+desc    = 图形化DEBUG内部错误
+desc_en = Track-debug error
+
+[360]
+id      = 360
+desc    = 自定义抓包内部错误
+desc_en = Capture error
+
+[361]
+id      = 361
+desc    = 过滤条件内部错误
+desc_en = Filter error
+
+[362]
+id      = 362
+desc    = 模块选择错误
+desc_en = Module error
+
+[363]
+id      = 363
+desc    = 自定义抓包保存文件最多10个
+desc_en = Capture file max
+
+[364]
+id      = 364
+desc    = 主题信息不能为空
+desc_en = Empty subject information content
+
+[365]
+id      = 365
+desc    = USBKEY密钥大小为1024 
+desc_en = Key size is larger than max usbkey key size
+
+[366]
+id      = 366
+desc    = 没有授权
+desc_en = Not authorized
+
+[367]
+id      = 367
+desc    = 没有配置外置存储器不能启用该功能
+desc_en = Can't enable for CF card and USB doesn't config
+
+[368]
+id      = 368
+desc    = 无效的贝叶斯数据库文件
+desc_en = Invalid Bayes database
+
+[369]
+id      = 369
+desc    = 贝叶斯数据库被破坏
+desc_en = Bayes database is Broken
+
+[370]
+id      = 370
+desc    = DHCP服务器名称重复
+desc_en = Dhcp server's name duplicate
+
+[371]
+id      = 371
+desc    = 请先设置存储数据库的外置存储器的位置
+desc_en = Please first set database save location
+
+[372]
+id      = 372
+desc    = 学习贝叶斯失败
+desc_en = Study bayes fail
+
+[373]
+id      = 373
+desc    = 没有找到相应NAT规则
+desc_en = No IP NAT rule found
+
+[374]
+id      = 374
+desc    = 请输入测试收件人的邮件地址
+desc_en = Please input receiver email address
+
+[375]
+id      = 375
+desc    = 请输入服务器的地址和邮件服务的端口
+desc_en = Please input server's address and port
+
+[376]
+id      = 376
+desc    = 目标服务器ip不能与设备本身接口ip相同
+desc_en = Server IP overlap with interface IP
+
+[377]
+id      = 377
+desc    = 模版名称重复
+desc_en = This profile is already exist
+
+[378]
+id      = 378
+desc    = 模版名称不能为空
+desc_en = Profile name must not be null
+
+[379]
+id      = 379
+desc    = 该模版不存在
+desc_en = This profile is not exist
+
+[380]
+id      = 380
+desc    = 模版正在被引用
+desc_en = Profile is inusing
+
+[381]
+id      = 381
+desc    = 无效的请求或命令
+desc_en = Invalid request or command
+
+[382]
+id      = 382
+desc    = 请求提交异常
+desc_en = Request submit error
+
+[383]
+id      = 383
+desc    = 证书正在被使用，不能删除
+desc_en = The certificate is used ,cannot be delete!
+
+[384]
+id      = 384
+desc    = 策略模版的地址发生冲突
+desc_en = Policy IP address is conflict
+
+[385]
+id      = 385
+desc    = 端口已经被占用
+desc_en = port already in used
+
+[386]
+id      = 386
+desc    = 监听端口出错
+desc_en = listen port error
+
+[387]
+id      = 387
+desc    = 贝叶斯库不存在
+desc_en = Bayes database doesn't exist
+
+[388]
+id      = 388
+desc    = 外置CF卡正在使用
+desc_en = CF card is using
+
+[389]
+id      = 389
+desc    = 外置USB 正在使用
+desc_en = USB device is using
+
+[390]
+id      = 390
+desc    = 该证书已关联至其他用户
+desc_en = Cert is already bound to other uer
+
+[391]
+id      = 391
+desc    = 域名格式错误
+desc_en = Error domain format
+
+[392]
+id      = 392
+desc    = 内网安全基础版没有授权
+desc_en = The license is invalid for NAC base version
+
+[393]
+id      = 393
+desc    = 内网安全增强版没有授权
+desc_en = The license is invalid for NAC extend version
+
+[394]
+id      = 394
+desc    = 查询的IP地址格式非法
+desc_en = Invalid IP filter string
+
+[395]
+id      = 395
+desc    = 查询网络地址只支持掩码长度是8，16，24
+desc_en = Only support network mask's length: 8,16,24
+
+[396]
+id      = 396
+desc    = 存储器空间不足，请更换大容量存储器
+desc_en = The movable memory space is too small
+
+[397]
+id      = 397
+desc    = 天珣客户端的文件名无效
+desc_en = Tianxun Client name is invalid
+
+[398]
+id      = 398
+desc    = 设备忙，请稍候再试。
+desc_en = The device is busy now
+
+[399]
+id      = 399
+desc    = 已经是垃圾邮件的日志无法手动标记为垃圾邮件
+desc_en = Can't convert spam log to spam
+
+[400]
+id      = 400
+desc    = 主主模式的时候不能自动同步AV和IPS库
+desc_en = Can't auto sync AV and IPS library when in MASTER-MASTER mode
+
+[401]
+id      = 401
+desc    = 条目名称重复
+desc_en = This node is already exist
+
+[402]
+id      = 402
+desc    = 被策略引用的桥端口不能删除
+desc_en = Can't delete brige port used by policy
+
+[403]
+id      = 403
+desc    = 请求超时
+desc_en = Request timeout
+
+[404]
+id      = 404
+desc    = 授权都已经激活
+desc_en = License had already active
+
+[405]
+id      = 405
+desc    = 存储器忙，请稍候再试
+desc_en = Memory busy, please try later
+
+[406]
+id      = 406
+desc    = NAT地址池IP地址范围重叠
+desc_en = NAT pool IP address range overlap
+
+[407]
+id      = 407
+desc    = NAT地址池IP地址范围数量超过限制
+desc_en = NAT pool IP address ranges exceed limit
+
+[408]
+id      = 408
+desc    = NAT地址池IP地址范围不存在
+desc_en = NAT pool IP address range not existed
+
+[409]
+id      = 409
+desc    = NAT地址池IP地址范围已存在
+desc_en = NAT pool ip address range existed
+
+[410]
+id      = 410
+desc    = NAT地址池IP地址范围创建失败
+desc_en = NAT pool ip address range create failed
+
+[411]
+id      = 411
+desc    = 内存错误，无法创建地址池
+desc_en = NAT pool memory alloc failed
+
+[412]
+id      = 412
+desc    = 没有授权，无法升级
+desc_en = Cancel update for no license
+
+[413]
+id      = 413
+desc    = 引用地址监控模板失败
+desc_en = Communication with monitor address process failed
+
+[414]
+id      = 414
+desc    = 监控接口不能被引用多次
+desc_en = Monitor interface can not be used duplicate
+
+[415]
+id      = 415
+desc    = 监控地址不能被引用多次
+desc_en = Monitor address can not be used duplicate
+
+[416]
+id      = 416
+desc    = 监控接口最多配置10个
+desc_en = Monitor interface can not more than ten
+
+[417]
+id      = 417
+desc    = 监控地址最多配置10个
+desc_en = Monitor address can not more than ten
+
+[418]
+id      = 418
+desc    = 这个命令只能用在高级配置模式
+desc_en = This command can only used in master config style
+
+[419]
+id      = 419
+desc    = 这个命令只能用在基本配置模式
+desc_en = This command can only used in basic config style
+
+[420]
+id      = 420
+desc    = 无效的监控地址模板
+desc_en = The monitor address invalid
+
+[421]
+id      = 421
+desc    = 需要配置引用的监控地址模板
+desc_en = Must choose template of monitor address
+
+[422]
+id      = 422
+desc    = 地址监控组不能超过10个
+desc_en = Too many group of monitor address, must less than 10
+
+[423]
+id      = 423
+desc    = 用户组已经在其他用户策略中使用
+desc_en = Usergroup is already in another user policy
+
+[424]
+id      = 424
+desc    = 该用户已经绑定到其它策略
+desc_en = User is already inusing for another user-ip-mac profile
+
+[425]
+id      = 425
+desc    = 密码长度太短最少8个字符
+desc_en = Password too short, must longer than 7
+
+[426]
+id      = 426
+desc    = 邮件过滤配置已存在
+desc_en = Mail-filter config conflicted
+
+[427]
+id      = 427
+desc    = 邮件过滤配置不存在
+desc_en = Mail-filter config missed
+
+[428]
+id      = 428
+desc    = 邮件过滤配置项超过限制
+desc_en = Mail-filter config exceeded
+
+[429]
+id      = 429
+desc    = 邮件过滤配置失败
+desc_en = Mail-filter config set ips failed
+
+[430]
+id      = 430
+desc    = 邮件过滤配置取消失败
+desc_en = Mail-filter config unset ips failed
+
+[431]
+id      = 431
+desc    = 邮件过滤配置输入错误
+desc_en = Mail-filter config input error
+
+[432]
+id      = 432
+desc    = 监控地址重复
+desc_en = Monitor address is already exist
+
+[433]
+id      = 433
+desc    = NAT地址池已存在
+desc_en = NAT pool existed
+
+[434]
+id      = 434
+desc    = 别名不允许设置为像eth1|ge1/1 |xge1/1|gre1 | lo1 | bvi1 | eth0.2 |tvi1 |tunnel 等形式
+desc_en = Aliasname can't be like eth1 | |ge1/1|xge1/1| gre1 | lo1 | bvi1 | eth0.2 | tvi1 |tunnel 
+
+[435]
+id      = 435
+desc    = 红名单与黑名单进程名称发生冲突
+desc_en = Red list confict with black list
+
+[436]
+id      = 436
+desc    = 生成证书请求失败
+desc_en = Make certificate failed
+
+[437]
+id      = 437
+desc    = Hello 间隔时间应当小于Dead间隔时间 
+desc_en = hello-interval must smaller than Dead-interval
+
+[438]
+id      = 438
+desc    = 已经使用了这个监控地址对象 
+desc_en = Already use the monitor address
+
+[439]
+id      = 439
+desc    = 回弹邮件的内容中不能包含0x0a和0x0d 
+desc_en = Can't content 0x0a and 0x0d in reply content
+
+[440]
+id      = 440
+desc    = 接口被turnk引用
+desc_en = Interface used by trunk
+
+[441]
+id      = 441
+desc    = Trunk组号与其他Trunk组冲突
+desc_en = Trunk group duplite with another trunk
+
+[442]
+id      = 442
+desc    = 接口有vlan子接口不能加入Trunk组
+desc_en = please remove it's child vlan interface first 
+
+[443]
+id      = 443
+desc    = 接口为ha接口不能加入Trunk组
+desc_en = Can't add hainterface as trunk port
+
+[444]
+id      = 444
+desc    = 主接口已经被设置为Trunk端口
+desc_en = Failed , for the master interface has be set to trunk
+
+[445]
+id      = 445
+desc    = 有vlan子接口的Trunk接口不能被删除
+desc_en = Can't remove trunk interface because it has child vlan interface
+
+[446]
+id      = 446
+desc    = SSL 特殊改写字符串已经存在
+desc_en = Ssl special rewrite string already exist
+
+[447]
+id      = 447
+desc    = 接口已配置二三层链路绑定
+desc_en = Interface used by link-bind
+
+[448]
+id      = 448
+desc    = 无效的接口
+desc_en = Invalid interface
+
+[449]
+id      = 449
+desc    = 无效的VRID
+desc_en = Invalid VRID
+
+[450]
+id      = 450
+desc    = 无效的优先级
+desc_en = Invalid priority
+
+[451]
+id      = 451
+desc    = 备份组数量超过最大限制
+desc_en = Group counter exceed max number
+
+[452]
+id      = 452
+desc    = 虚拟IP数量超过最大限制
+desc_en = Virtual IP counter exceed max number
+
+[453]
+id      = 453
+desc    = 抢占延迟超出合法范围
+desc_en = Preempt delay range exceed limit
+
+[454]
+id      = 454
+desc    = 通告间隔超出合法范围
+desc_en = Advertisement interval range exceed limit
+
+[455]
+id      = 455
+desc    = 无效的虚拟IP，虚拟IP不能为全零地址、多播地址、广播地址、环回地址、非A/B/C类地址和其它非法IP地址
+desc_en = Invalid Virtual IP
+
+[456]
+id      = 456
+desc    = 存在重复的虚拟IP
+desc_en = Virtual IP is already exist
+
+[457]
+id      = 457
+desc    = 不存在此接口
+desc_en = Interface doesn't exist
+
+[458]
+id      = 458
+desc    = 不存在此备份组
+desc_en = Group doesn't exist
+
+[459]
+id      = 459
+desc    = VRID重复的备份组
+desc_en = VRID is already exist
+
+[460]
+id      = 460
+desc    = IKE认证方法不支持该参数
+desc_en = IKE Authentication Method does not support this parametre
+
+[461]
+id      = 461
+desc    = 国密规范要求IPSec SA密钥周期必须小于3600秒
+desc_en = IPSec lifetime must be lower than 3600 seconds according to the national specification
+
+[462]
+id      = 462
+desc    = AD域同步只能使用通用认证方法
+desc_en = ldap config error
+
+[463]
+id      = 463
+desc    = 接口不能和自己绑定
+desc_en = Interface cannot bind to itself
+
+[464]
+id      = 464
+desc    = 静态路由器接口应是桥下的接口
+desc_en = Static router port must be a bridge port
+
+[465]
+id      = 465
+desc    = 静态成员接口应是桥下的接口
+desc_en = Static member port must be a bridge port
+
+[466]
+id      = 466
+desc    = 接口不能同时设置为静态路由器接口和静态成员接口
+desc_en = Can not set static router port and static member port at the same time
+
+[467]
+id      = 467
+desc    = 
+desc_en = Must be permit or deny
+
+[468]
+id      = 468
+desc    = 
+desc_en =  Can't find route-map entry
+
+[469]
+id      = 469
+desc    = 
+desc_en =  Can't find rule
+
+[470]
+id      = 470
+desc    = 
+desc_en = Argument is malformed
+
+[471]
+id      = 471
+desc    = 
+desc_en =  Malformed communities attribute
+
+[472]
+id      = 472
+desc    = 
+desc_en = There is already same aggregate network
+
+[473]
+id      = 473
+desc    = 
+desc_en = Inconsistent address and mask
+
+[474]
+id      = 474
+desc    = 
+desc_en = Malformed address
+
+[475]
+id      = 475
+desc    = 
+desc_en = access-list doesn't exist
+
+[476]
+id      = 476
+desc    = 
+desc_en = Invalid prefix range 
+
+[477]
+id      = 477
+desc    = 
+desc_en = have same policy
+
+[478]
+id      = 478
+desc    = 
+desc_en = Can't find specified prefix-list
+
+[479]
+id      = 479
+desc    = 
+desc_en = Both prefix and type required
+
+[480]
+id      = 480
+desc    = 
+desc_en = can't compile regexp 
+
+[481]
+id      = 481
+desc    = 
+desc_en = Can't find asfilter 
+
+[482]
+id      = 482
+desc    = 
+desc_en = There is no aggregate-address configuration
+
+[483]
+id      = 483
+desc    = 
+desc_en = Can't find communit-list
+
+[484]
+id      = 484
+desc    = 
+desc_en = Peer flag set error
+
+[485]
+id      = 485
+desc    = 
+desc_en = connection is not established
+
+[486]
+id      = 486
+desc    = 
+desc_en = community list error
+
+[487]
+id      = 487
+desc    = 
+desc_en = Network not in table
+
+[488]
+id      = 488
+desc    = 
+desc_en = Invalid  name
+
+[489]
+id      = 489
+desc    = 
+desc_en = already redistribute flag is set
+
+[490]
+id      = 490
+desc    = 
+desc_en = No RIB exist for the AFI/SAFI
+
+[491]
+id      = 491
+desc    = 没有配置指定的路由
+desc_en = Can't find specified static route configuration
+
+[492]
+id      = 492
+desc    = 
+desc_en = Create the peer-group first
+
+[493]
+id      = 493
+desc    = 
+desc_en = bgp clear error
+
+[494]
+id      = 494
+desc    = 
+desc_en = Invalid route type 
+
+[495]
+id      = 495
+desc    = 
+desc_en = No such peer
+
+[496]
+id      = 496
+desc    = 
+desc_en = No such peer-group
+
+[497]
+id      = 497
+desc    = 
+desc_en = Invalid value
+
+[498]
+id      = 498
+desc    = 
+desc_en = set allow send default route
+
+[499]
+id      = 499
+desc    = 
+desc_en = Specify remote-as or peer-group commands first
+
+[500]
+id      = 500
+desc    = 
+desc_en = Community name conflict, previously defined as standard community
+
+[501]
+id      = 501
+desc    = 
+desc_en = Community name conflict, previously defined as expanded community
+
+[502]
+id      = 502
+desc    = 
+desc_en = Can't find as_path access-list
+
+[503]
+id      = 503
+desc    = 不能配置自己作为邻居
+desc_en = Can not configure the local system as neighbor
+
+[504]
+id      = 504
+desc    = BGP已经运行了
+desc_en = BGP is already running
+
+[505]
+id      = 505
+desc    = 没有找到这个BGP节点
+desc_en = Can't find BGP instance
+
+[506]
+id      = 506
+desc    = BGP socket 创建失败
+desc_en = BGP socket creat faile
+
+[507]
+id      = 507
+desc    = 
+desc_en = Peer-group Cannot configure remote-as for member
+
+[508]
+id      = 508
+desc    = 
+desc_en = set filter list to the peer error
+
+[509]
+id      = 509
+desc    = 不能建立路由表
+desc_en = Can't create route table
+
+[510]
+id      = 510
+desc    = 路由表正在使用中，请先删除路由
+desc_en = Route table is using, please delete routes in the route table
+
+[511]
+id      = 511
+desc    = 策略表正在使用中，请先删除安全策略
+desc_en = Policy table is using, please delete policys in the policy table
+
+[512]
+id      = 512
+desc    = NAT规则表正在使用中，请先删除NAT规则
+desc_en = Nat rule table is using, please delete nat rules in the nat rule table
+
+[513]
+id      = 513
+desc    = NAT地址池表正在使用中，请先删除NAT地址池
+desc_en = Nat pool table is using, please delete nat pools in the nat pool table
+
+[514]
+id      = 514
+desc    = 路由表不存在
+desc_en = Route table is not existed
+
+[515]
+id      = 515
+desc    = 虚拟系统开关设置错误
+desc_en = Virtual System Switch set error
+
+[516]
+id      = 516
+desc    = 虚拟系统功能还没有开启
+desc_en = Virtual System switch is disabled
+
+[517]
+id      = 517
+desc    = 虚拟系统内存分配失败
+desc_en = Virtual System malloc failed
+
+[518]
+id      = 518
+desc    = 虚拟系统ID分配失败
+desc_en = Get Virtual System ID failed
+
+[519]
+id      = 519
+desc    = 所创建的虚拟系统数已经达到上限
+desc_en = Virtual System already exceed
+
+[520]
+id      = 520
+desc    = 该虚拟系统不存在
+desc_en = Virtual System is not existed
+
+[521]
+id      = 521
+desc    = 该虚拟系统存在关联的管理员，请先删除
+desc_en = There is a administrator in the vitual system at least ,please delete it at first!
+
+[522]
+id      = 522
+desc    = 虚拟系统配置参数错误
+desc_en = Virtual System parameter error
+
+[523]
+id      = 523
+desc    = Root系统不允许删除
+desc_en = Root is not allow to delete
+
+[524]
+id      = 524
+desc    = 虚拟系统中的接口没有被删除
+desc_en = Virtual System's interfaces is not NULL
+
+[525]
+id      = 525
+desc    = 接口被其他虚拟系统使用
+desc_en = Interface used by other
+
+[526]
+id      = 526
+desc    = 虚拟系统中的安全策略表不存在
+desc_en = Virtual System's policy list is not existed
+
+[527]
+id      = 527
+desc    = 虚拟系统中的NAT表不存在
+desc_en = Virtual System's nat list is not existed
+
+[528]
+id      = 528
+desc    = 虚拟系统名已经存在
+desc_en = Virtual System's name is already exist 
+
+[529]
+id      = 529
+desc    = 该接口被虚拟系统引用
+desc_en = The interface is set Virtual System
+
+[530]
+id      = 530
+desc    = 该接口还在使用中，请检查
+desc_en = The interface is using, please check it
+
+[531]
+id      = 531
+desc    = ROOT系统没有必要添加或删除接口
+desc_en = Root does not need to add or delete interface
+
+[532]
+id      = 532
+desc    = 虚拟系统资源限制设置失败，请检查配置
+desc_en = Source limit set error, please check it
+
+[533]
+id      = 533
+desc    = 只有Root系统可以切换
+desc_en = Only root allow to switch
+
+[534]
+id      = 534
+desc    = 虚拟系统设置失败
+desc_en = Virtual System set failed
+
+[535]
+id      = 535
+desc    = 获取当前虚拟系统ID失败
+desc_en = Get current Virtual System index failed
+
+[536]
+id      = 536
+desc    = 
+desc_en = Inbound soft reconfiguration not enabled
+
+[537]
+id      = 537
+desc    = 系统锁获取失败
+desc_en = System lock failed
+
+[538]
+id      = 538
+desc    = 无法找到系统文件
+desc_en = Can not find system files
+
+[539]
+id      = 539
+desc    = 丢失了关键的系统文件
+desc_en = Critical system files missing
+
+[540]
+id      = 540
+desc    = 没有足够的存储空间
+desc_en = Not enough storage space
+
+[541]
+id      = 541
+desc    = 文件正在被引用
+desc_en = File is been used
+
+[542]
+id      = 542
+desc    = 文件名超长
+desc_en = File name is too long
+
+[543]
+id      = 543
+desc    = 文件数达到最大
+desc_en = File number is reach max
+
+[544]
+id      = 544
+desc    = 主接口已经被设置为到其他虚拟系统
+desc_en = Failed , for the master interface has be set to virtual system
+
+[545]
+id      = 545
+desc    = 
+desc_en = HOLD
+
+[546]
+id      = 546
+desc    = 配置文件内容格式错误<br>      正确格式如下:<br>address name<br>&nbsp;host-address ip<br>&nbsp;net-address ip/mask<br>&nbsp;range-address      start_ip end_ip<br>address-group name<br>&nbsp;address-object name<br>注意:行末不能有空格或制表符且不能有空行
+desc_en = Address object config file content format error
+
+[547]
+id      = 547
+desc    = 配置文件中不存在地址对象
+desc_en = Config file not include address object
+
+[548]
+id      = 548
+desc    =  虚拟系统中的安全域表不存在
+desc_en = Virtual System's zone table is not existed
+
+[549]
+id      = 549
+desc    = 安全域表正在使用中，请先删除安全域
+desc_en = Zone table is using, please delete zones in the zone table
+
+[550]
+id      = 550
+desc    = ID格式非法,ID格式应当为:XXXX 或XXXXXX@XXXXXX 或IP地址 X代表数字或字母
+desc_en = ID format illegal(XXXXXX  or XXXXXX@XXXXXX  or IP address X denotes number or alphabet)
+
+[551]
+id      = 551
+desc    = 虚拟系统中的安全防护表不存在
+desc_en = Virtual System's profile list does not exist
+
+[552]
+id      = 552
+desc    = 虚拟系统的安全防护表未删除
+desc_en = Virtual System's profile list is not deleted
+
+[553]
+id      = 553
+desc    = 虚拟系统中的目的IP流量统计HASH链表不存在
+desc_en = Virtual System's hash table count by destination IP does not exist
+
+[554]
+id      = 554
+desc    = 虚拟系统中的源IP流量统计HASH链表不存在
+desc_en = Virtual System's hash table count by source IP does not exist
+
+[555]
+id      = 555
+desc    = 虚拟系统中的目的端口流量统计HASH 链表不存在
+desc_en = Virtual System's hash table count by destination port does not exist
+
+[556]
+id      = 556
+desc    = 
+desc_en = HOLD
+
+[557]
+id      = 557
+desc    = 
+desc_en = HOLD
+
+[558]
+id      = 558
+desc    = 
+desc_en = HOLD
+
+[559]
+id      = 559
+desc    = 
+desc_en = HOLD
+
+[560]
+id      = 560
+desc    = IPv6 地址格式错误
+desc_en = Malformed IPv6 address
+
+[561]
+id      = 561
+desc    = IPv6 tunnel取值范围(1-2047)
+desc_en = IPv6 tunnel (1-2047)
+
+[562]
+id      = 562
+desc    = reachable-time取值为(0,3600000)
+desc_en = reachable-time is (0,3600000)
+
+[563]
+id      = 563
+desc    = AdvPreferredLifetime取值不能大于AdvValidLifetime
+desc_en = AdvPreferredLifetime <= AdvValidLifetime
+
+[564]
+id      = 564
+desc    = ra-lifetime取值可为零,取非零值时不能小于发布间隔
+desc_en = ra-lifetime must be either zero or >= Distribution Interval
+
+[565]
+id      = 565
+desc    = ra-lifetime(4-9000)
+desc_en = ra-lifetime(4-9000)
+
+[566]
+id      = 566
+desc    = 发布间隔(4-1800)
+desc_en = ra-interval(4-1800)
+
+[567]
+id      = 567
+desc    = IPv6 隧道源ip和目的ip冲突
+desc_en = IPv6 tunnel source ip can't equal destination ip
+
+[568]
+id      = 568
+desc    = 无效的路由前缀
+desc_en = Invalid routing prefix
+
+[569]
+id      = 569
+desc    = 无效的下一跳
+desc_en = Invalid nexthop
+
+[570]
+id      = 570
+desc    = 
+desc_en = IPv6 HOLD
+
+[571]
+id      = 571
+desc    = 
+desc_en = IPv6 HOLD
+
+[572]
+id      = 572
+desc    = 
+desc_en = IPv6 HOLD
+
+[573]
+id      = 573
+desc    = 
+desc_en = IPv6 HOLD
+
+[574]
+id      = 574
+desc    = 
+desc_en = IPv6 HOLD
+
+[575]
+id      = 575
+desc    = 
+desc_en = IPv6 HOLD
+
+[576]
+id      = 576
+desc    = 
+desc_en = IPv6 HOLD
+
+[577]
+id      = 577
+desc    = 
+desc_en = IPv6 HOLD
+
+[578]
+id      = 578
+desc    = 
+desc_en = IPv6 HOLD
+
+[579]
+id      = 579
+desc    = 
+desc_en = IPv6 HOLD
+
+[580]
+id      = 580
+desc    = 
+desc_en = HOLD
+
+[581]
+id      = 581
+desc    = TTL必须属于<0-255>
+desc_en = TTL must be in <0-255>
+
+[582]
+id      = 582
+desc    = 隧道源地址和对端地址不能相同
+desc_en = Tunnel source address can't equal destination address
+
+[583]
+id      = 583
+desc    = 目的地址只能是地址对象
+desc_en = The destination address is only address object
+
+[584]
+id      = 584
+desc    = 转换后的地址只能是NAT地址池
+desc_en = The translate address is only nat pool
+
+[585]
+id      = 585
+desc    = 请先删除虚拟系统
+desc_en = Please clean virtual systems firstly
+
+[586]
+id      = 586
+desc    = 对同一应用启用了多个策略
+desc_en = Multiple configuration enabled on one application
+
+[587]
+id      = 587
+desc    = 该端口是系统默认端口
+desc_en = The given port is the default port
+
+[588]
+id      = 588
+desc    = 表格已满
+desc_en = The table is full
+
+[589]
+id      = 589
+desc    = 该端口已被注册
+desc_en = The port is already registed
+
+[590]
+id      = 590
+desc    = 该端口注册失败
+desc_en = The registration failed
+
+[591]
+id      = 591
+desc    = 该端口值不在合法范围内
+desc_en = The given port is illegal
+
+[592]
+id      = 592
+desc    = 请输入不带路径的域名
+desc_en = Please input the host name whitout path
+
+[593]
+id      = 593
+desc    = Url映射分类数目已到限制值5
+desc_en = The url rating category exceed the limit 5
+
+[594]
+id      = 594
+desc    = Url映射数目已到限制值
+desc_en = The number of url rating exceed the limit
+
+[595]
+id      = 595
+desc    = 请选择一个分类
+desc_en = Please input choose a category name
+
+[596]
+id      = 596
+desc    = 未指定隧道名
+desc_en = VPN tunnel name not designated
+
+[597]
+id      = 597
+desc    = 不能删除预置的操作系统检查项
+desc_en = Cannot delete preset os-check item
+
+[598]
+id      = 598
+desc    = 不能修改预置的操作系统检查项
+desc_en = Cannot modify preset os-check item
+
+[599]
+id      = 599
+desc    = 分类已经存在，请检查预定义分类或本地分类
+desc_en = Category is already existed,please check the predefined or local category
+
+[600]
+id      = 600
+desc    = 
+desc_en = URL HOLD
+
+[601]
+id      = 601
+desc    = 只能为EBGP配置local-as
+desc_en = Local-as could be configured only for EBGP
+
+[602]
+id      = 602
+desc    = 不可以设置为本地AS号
+desc_en = The local-as number cannot be the same as AS number
+
+[603]
+id      = 603
+desc    = 不可以为对等体组成员设置local-as
+desc_en = Local-as cannot be configured for peer-group members
+
+[604]
+id      = 604
+desc    = 请注销其他web页面登录用户后再操作
+desc_en = Please logout other web logining users and then operate
+
+[605]
+id      = 605
+desc    = 模板数量已达到最大限制
+desc_en = The template number reach the maximum
+
+[606]
+id      = 606
+desc    = 虚拟系统的inspect 目的IP 流量统计列表不存在
+desc_en = Virtual System's inspect table count by destination ip does not exist
+
+[607]
+id      = 607
+desc    = 虚拟系统的inspect 源IP 流量统计列表不存在
+desc_en = Virtual System's inspect table count by source ip does not exist
+
+[608]
+id      = 608
+desc    = 虚拟系统的inspect 目的端口 流量统计列表不存在
+desc_en = Virtual System's inspect table count by destination port does not exist
+
+[609]
+id      = 609
+desc    = 请先关闭该虚拟系统的日志服务器配置
+desc_en = Please close syslog server config of this virtual system firstly
+
+[610]
+id      = 610
+desc    = 事件响应策略模板已经超过上值128
+desc_en = Event response policy template has already reached the max value 128
+
+[611]
+id      = 611
+desc    = 事件响应策略模板名称冲突
+desc_en = Event response policy template name collided
+
+[612]
+id      = 612
+desc    = 该地址已存在于XSS和SQL注入白名单列表中
+desc_en = The url has existed in the XSS and SQL whitelist
+
+[613]
+id      = 613
+desc    = XSS和SQL注入白名单列表数目超出最大值256
+desc_en = The XSS and SQL whitelist item has exceed the max count 128
+
+[614]
+id      = 614
+desc    = 接口已启用旁路监听，无法支持此配置
+desc_en = Interface used by bypass-monitor
+
+[615]
+id      = 615
+desc    = 虚拟系统中的安全策略表已更改
+desc_en = Virtual System's policy list is changed
+
+[616]
+id      = 616
+desc    = 接口是管理口，无法支持此配置
+desc_en = Interface used by management port
+
+[617]
+id      = 617
+desc    = 接口已配置为HA 口，无法支持此配置
+desc_en = Interface used by HA
+	
+[618]
+id      = 618
+desc    = 添加安全防护表失败
+desc_en = Add profile failed
+
+[619]
+id      = 619
+desc    = xss、sql例外添加失败, 可能是复、错误、个数太多等原因。
+desc_en = Adding failed for the xss,sql exception,  maybe duplicate, or error , or too many.
+
+[620]
+id      = 620
+desc    = XSSQL处理程序错误, 请查看串口界面: debug xssql-guish
+desc_en = The XSSQL whitelist error
+
+[621]
+id      = 621
+desc    = 权限表数量达到最大限制
+desc_en = The auth table reach max
+
+[622]
+id      = 622
+desc    = HA处于备机状态，不能设置监控口
+desc_en = Now HA state is BACKUP, can not set monitor interface
+
+[623]
+id      = 623
+desc    = 该接口不是监控接口
+desc_en = The interface is not a monitor interface
+
+[624]
+id      = 624
+desc    = HA处于备机状态，不能设置监控地址组
+desc_en = Now HA state is BACKUP, can not set monitor address group
+
+[625]
+id      = 625
+desc    = HA没有配置地址监控对象
+desc_en = HA has no templet
+
+[626]
+id      = 626
+desc    = 没有配置告警邮件服务器
+desc_en = Smtp server has no configure
+
+[627]
+id      = 627
+desc    = 外置bypass开启失败
+desc_en = External bypass open failed
+
+[628]
+id      = 628
+desc    = 外置bypass关闭失败
+desc_en = External bypass close failed
+
+[629]
+id      = 629
+desc    = 列表长度超过最大限制,部分名单添加成功
+desc_en = List length exceed the limit，part of the list add succeed
+
+[630]
+id      = 630
+desc    = 
+desc_en = HOLD
+
+[631]
+id      = 631
+desc    = 该URL已存在，请重新输入!
+desc_en = The url has existed, please input again!
+
+[632]
+id      = 632
+desc    = 该关键字已存在，请重新输入!
+desc_en = The keyword has existed, please input again!
+
+[633]
+id      = 633
+desc    = Radius服务器达到最大数量
+desc_en = Radius-server number reach maximum
+
+[634]
+id      = 634
+desc    = Ldap服务器达到最大数量
+desc_en = Ldap-server number reach maximum
+
+[635]
+id      = 635
+desc    = 该WEB过滤模板已经存在
+desc_en = The web filter template is already existed
+
+[636]
+id      = 636
+desc    = 该配置恢复文件不存在
+desc_en = The backup sysconfig file does not exist
+
+[637]
+id      = 637
+desc    = 不能在光口设置该参数
+desc_en = Cannot set this parameter on fibber interface
+
+[638]
+id      = 638
+desc    = 参数不正确：速率1000/半双工
+desc_en = Invalid parameter: speed 1000 /duplex half
+
+[639]
+id      = 639
+desc    = 
+desc_en = eth_if_config hold
+
+[640]
+id      = 640
+desc    = 
+desc_en = eth_if_config hold
+
+[641]
+id      = 641
+desc    = HA运行为主主模式，不允许配置抢占!
+desc_en = Now HA is in master-master mode,can't configure grob style!
+
+[642]
+id      = 642
+desc    = 管理员数量达到最大值!
+desc_en = The users reach max!
+
+[643]
+id      = 643
+desc    = HA本地通信地址和HA对端通信地址不能相同,请重新输入!
+desc_en = Local ha ip can't equal to remote ha ip, please input again!
+
+[644]
+id      = 644
+desc    = HA运行为主主模式，不允许配置监听接口!
+desc_en = Now HA is in master-master mode,can't configure monitor interface!
+
+[645]
+id	= 645
+desc	= 接口被网线模式引用
+desc_en	= Interface used by linkgroup
+
+[646]
+id	= 646
+desc    = 接口有vlan子接口不能加入网线组
+desc_en = please remove it's child vlan interface first 
+
+[647]
+id      = 647
+desc    = 网线组名与其他网线组冲突
+desc_en = Link group duplite with another link
+
+[648]
+id      = 648
+desc    = 该命令只能在主备模式下运行
+desc_en = This command can only be run under backup-master mode
+
+[659]
+id		= 659
+desc	= 接口被静态路由引用
+desc_en	= Interface used by static route
+
+[676]
+id	=676
+desc	=首行错误，首行必须为!system config，包括换行符
+desc_en	=Head line error.Head line must be \"!system config\
+
+[677]
+id	=677
+desc	=尾行错误，尾行必须为!end，包括换行符
+desc_en	=End line error.End line must be \"!end\
+
+[678]
+id      = 678
+desc    = 不允许切换，维持当前状态
+desc_en = manual_swap_permission denied
+
+[680]
+id      = 680
+desc    = 接口已配置接口绑定
+desc_en = Interface used by interface -bind
+
+[684]
+id      = 684
+desc    = 该地址与接口地址冲突
+desc_en = Address overlaps with other interface
+
+[685]
+id      = 685
+desc    = HA 接口，不支持此配置
+desc_en = Interface used by HA
+
+[687]
+id      = 687
+desc    = vlan 接口的 mtu 不能大于其主接口的mtu
+desc_en = Vlan sub Interface mtu can't more than Physical port mtu
+
+[688]
+id      = 688
+desc    = 用户被锁定
+desc_en = The user have been locked by administrator
+
+[691]
+id      = 691
+desc    = 白名单列表数目达到最大限制
+desc_en = THE NUMBER OF WHITE LIST NUMBER REACH MAXIMUM
+
+[693]
+id      = 693
+desc    = 有接口已配置为HA口，无法配置接口联动
+desc_en = Exist Interface used by HA, Cannot config Interface_link
+
+[695]
+id      = 695
+desc    = 要选定一个SNMP版本
+desc_en = need to chose one SNMP version
+
+[698]
+id      = 698
+desc    = 名称不能以vservice_为前缀
+desc_en = Name can't use 'vservice_' as a prefix
+
+[699]
+id      = 699
+desc    = 超过了虚拟对象可创建的地址监控最大数目
+desc_en = Over the maximum number of monitor address 
+
+[700]
+id      = 700
+desc    = BYPASS时间必须大于采样间隔，请重新配置
+desc_en = BYPASS time must be greater than the sampling interval, please re-configure
+
+[701]
+id      = 701
+desc    = 内存利用率的值超出范围(1~100)，请重新配置
+desc_en = Memory utilization value is out of range (1~100), please re-configure
+
+[702]
+id      = 702
+desc    = CPU利用率的值超出范围(1~100)，请重新配置
+desc_en = CPU utilization value is out of range (1~100), please re-configure
+
+[703]
+id      = 703
+desc    = BYPASS持续时间超出范围(10~3600)，请重新配置
+desc_en = BYPASS duration time is out of range (10~3600), please re-configure
+
+[704]
+id      = 704
+desc    = 采样间隔超出范围(1~3600)，请重新配置
+desc_en = The sampling interval value is out of range (1~3600), please re-configure
+
+[705]
+id      = 705
+desc    = 开启BYPASS的内存利用率的值必须大于关闭BYPASS的内存利用率的值,请重新输入
+desc_en = Opening BYPASS is greater than closing BYPASS in memory utilization value, please re-enter 
+
+[706]
+id      = 706
+desc    = 开启BYPASS的CPU利用率的值必须大于关闭BYPASS的CPU利用率的值,请重新输入
+desc_en = Opening BYPASS is greater than closing BYPASS in CPU utilization value, please re-enter
+
+[707]
+id      = 707
+desc    = 该地址监控正在被使用，不允许删除
+desc_en = Can't delete monitor address when it's being used
+
+[708]
+id      = 708
+desc    = 系统保留授权表名称，请使用其他名称
+desc_en = System retains the authorization table name, please use other name
+
+##################################
+## [IPS_ERROR_CODE = 8192]
+## begin at hex :0x2000  dec :8192
+##################################
+
+[IPS_ERROR_CODE+0]
+id      = 8192
+desc    = 
+desc_en = Waiting for someone to modify !
+
+
+
+
+
+##################################
+## [WAG_ERROR_CODE = 16384]
+## begin at hex :0x4000  dec :16384
+##################################
+
+[WAG_ERROR_CODE+0]
+id      = 16384
+desc    = 
+desc_en = Waiting for someone to modify 
+
+[WAG_ERROR_CODE+404]
+id      = 16788
+desc    = 授权已经激活
+desc_en = License had already active
+
+[WAG_ERROR_CODE+405]
+id      = 16789
+desc    = 存储器忙，请稍候再试
+desc_en = Memory busy, please try later
+
+[WAG_ERROR_CODE+406]
+id      = 16790
+desc    = 请求的原始报文不存在
+desc_en = RAWPKT FILE NOT EXIST
+
+[WAG_ERROR_CODE+407]
+id      = 16791
+desc    = 0网页防篡改的URL太长
+desc_en = The URL is too long for PPR
+
+[WAG_ERROR_CODE+408]
+id      = 16792
+desc    = 1银行卡卡号长度错误(正确长度:13-19)
+desc_en = The Length of Bank-Card is invalid(13-19)
+
+[WAG_ERROR_CODE+409]
+id      = 16793
+desc    = 2银行卡卡号包含非数字符号(0-9)
+desc_en = Has invalid char in  Bank-Card(only 0-9)
+
+[WAG_ERROR_CODE+410]
+id      = 16794
+desc    = 3银行卡卡号验证错误
+desc_en = The Checksum erro for Bank-Card
+
+[WAG_ERROR_CODE+411]
+id      = 16795
+desc    = 应用类型与真实服务器的协议不一致
+desc_en = The protocal is not the same
+
+[WAG_ERROR_CODE+412]
+id      = 16796
+desc    = 真实服务器配置重复
+desc_en = The real server has existed
+
+[WAG_ERROR_CODE+413]
+id      = 16797
+desc    = 虚拟服务不存在
+desc_en = The virtual service does not exist
+
+[WAG_ERROR_CODE+414]
+id      = 16798
+desc    = 私有数据保护配置重复
+desc_en = The ssl url has existed
+
+[WAG_ERROR_CODE+415]
+id      = 16799
+desc    = 没有可以导出的自定义事件集
+desc_en = no user defined configuration set
+
+[WAG_ERROR_CODE+416]
+id      = 16800
+desc    = 不合法的页面地址
+desc_en = Invalid page ur
+
+[WAG_ERROR_CODE+417]
+id      = 16801
+desc    = 添加页面地址失败
+desc_en = Add page url error!
+
+[WAG_ERROR_CODE+418]
+id      = 16802
+desc    = 添加统计的页面超过最大值200
+desc_en = Over statistic page url number 200!
+
+[WAG_ERROR_CODE+419]
+id      = 16803
+desc    = 添加的页面地址已经存在
+desc_en = The page url have exist!
+
+[WAG_ERROR_CODE+420]
+id      = 16804
+desc    = 临时授权已经被激活
+desc_en = Temporary license had already been activated
+
+[WAG_ERROR_CODE+421]
+id      = 16805
+desc    = 超过已授权的最大端口数量
+desc_en = Over port authorization number
+
+[WAG_ERROR_CODE+422]
+id      = 16806
+desc    = 接口未被授权
+desc_en = No authorization for this interface
+
+[WAG_ERROR_CODE+423]
+id      = 16807
+desc    = SSL 代理未授权
+desc_en = No authorization for ssl proxy
+
+[WAG_ERROR_CODE+424]
+id      = 16808
+desc    = 事件集正在被编辑请稍候
+desc_en = Some one is operating event set
+
+[WAG_ERROR_CODE+425]
+id      = 16809
+desc    = 业务处理中请稍候...
+desc_en = System bus
+
+[WAG_ERROR_CODE+426]
+id      = 16810
+desc    = 没有可以导出的自定义事件
+desc_en = no user defined configuration
+
+[WAG_ERROR_CODE+427]
+id      = 16811
+desc    = 没有可以激活的授权信息
+desc_en = No inactive license
+
+[WAG_ERROR_CODE+428]
+id      = 16812
+desc    = 设置了重复的IP地址
+desc_en = Duplicated IP address
+
+[WAG_ERROR_CODE+429]
+id      = 16813
+dese    = 不可识别的银行卡卡号
+desc_en = Unidentifiable Bank-Card.desc
+
+[WAG_ERROR_CODE+430]
+id      = 16814
+desc    = 该站点安全条目已经存在
+desc_en = The same site security item existed already
+
+[WAG_ERROR_CODE+431]
+id      = 16815
+desc    = 获取站点安全失败
+desc_en = Failed to get site security item
+
+[WAG_ERROR_CODE+432]
+id      = 16816
+desc    = 请先配置访问控制策略基本信息
+desc_en = first should set acl basic info!
+
+[WAG_ERROR_CODE+433]
+id      = 16817
+desc    = 获取安全策略失败
+desc_en = Failed to get security policy
+
+[WAG_ERROR_CODE+434]
+id      = 16818
+desc    = 该设备不支持Bypass
+desc_en = Joint-link bypass group id error!
+
+[WAG_ERROR_CODE+435]
+id      = 16819
+desc    = 真实服务器被引用不能编辑
+desc_en = real-server used by virtual can't edit !
+
+[WAG_ERROR_CODE+436]
+id      = 16820
+desc    = 敏感信息保护中身份证卡号错误
+desc_en = Critizen Card error!
+
+[WAG_ERROR_CODE+437]
+id      = 16821
+desc    = 原先的事件集已经被删除
+desc_en = The original set has been deleted!
+
+[WAG_ERROR_CODE+438]
+id      = 16822
+desc    = 某些特征事件已经被删除
+desc_en = Some signatures have been deleted!
+
+[WAG_ERROR_CODE+439]
+id      = 16823
+desc    = 目标ip地址不能超过200项
+desc_en = Destination IP address must be less than 201
+
+[WAG_ERROR_CODE+440]
+id      = 16824
+desc    = 设置匹配模式时出错
+desc_en = error when dealing pattern
+
+[WAG_ERROR_CODE+441]
+id      = 16825
+desc    = 模式中只允许有一个星号
+desc_en = only one '*' is allowed
+
+[WAG_ERROR_CODE+442]
+id      = 16826
+desc    = 模式错误，格式为/第一个匹配串*第二个匹配串
+desc_en = pattern format is wron
+
+[WAG_ERROR_CODE+443]
+id      = 16827
+desc    = 模式数量过多
+desc_en = too many patterns are set
+
+[WAG_ERROR_CODE+444]
+id      = 16828
+desc    = 模式串已经存在
+desc_en = pattern already exists
+
+[WAG_ERROR_CODE+445]
+id      = 16829
+desc    = 模式串不存在
+desc_en = pattern does not exist
+
+[WAG_ERROR_CODE+446]
+id      = 16830
+desc    = 非法的辅IP地址
+desc_en = Invalid secondary IP
+
+[WAG_ERROR_CODE+447]
+id      = 16831
+desc    = 正在自动升级恶意URL云库
+desc_en = The evil_url is updating
+
+[WAG_ERROR_CODE+448]
+id      = 16832
+desc    = 特征事件已经被删除
+desc_en = signatures event have been deleted!
+
+[WAG_ERROR_CODE+449]
+id      = 16833
+desc    = 地址映射池已创建
+desc_en = The nat pool existed
+
+[WAG_ERROR_CODE+450]
+id      = 16834
+desc    = 文件类型个数不能超过64个
+desc_en = The number of file type should be less than 64
+
+[WAG_ERROR_CODE+451]
+id      = 16835
+desc    = 虚拟服务协议类型为ftp协议时站点安全不能配置域名
+desc_en = If the protocol of virtual service is ft
+
+[WAG_ERROR_CODE+452]
+id      = 16836
+desc    = 自学习结果已经被重新学习
+desc_en = the param learn result been reseted
+
+[WAG_ERROR_CODE+453]
+id      = 16837
+desc    = 设置的密码不符合密码规则
+desc_en = Password is invalid
+
+[WAG_ERROR_CODE+454]
+id      = 16838
+desc    = 站点安全个数超过最大限制
+desc_en = profile number has reached the limit
+
+[WAG_ERROR_CODE+455]
+id      = 16839
+desc    = 自定义事件集个数超过最大限制
+desc_en = Self-define signatures number has reached the limit
+
+[WAG_ERROR_CODE+456]
+id      = 16840
+desc    = 安全策略个数超过最大限制
+desc_en = Security policy number has reached the limit
+
+[WAG_ERROR_CODE+457]
+id      = 16841
+desc    = FTP错误
+desc_en = ftp error
+
+[WAG_ERROR_CODE+458]
+id      = 16842
+desc    = 内存分配失败
+desc_en = Malloc error 
+
+[WAG_ERROR_CODE+459]
+id      = 16843
+desc    = 内存校验错误
+desc_en = Magic number error 
+
+[WAG_ERROR_CODE+460]
+id      = 16844
+desc    = 循环冗余校验错误
+desc_en = CRC check error 
+
+[WAG_ERROR_CODE+461]
+id      = 16845
+desc    = 文件错误
+desc_en = file error
+
+[WAG_ERROR_CODE+462]
+id      = 16846
+desc    = 设备忙
+desc_en = device busy
+
+[WAG_ERROR_CODE+463]
+id      = 16847
+desc    = 剩余内存空间不足，升级失败
+desc_en = no enough spac
+
+[WAG_ERROR_CODE+464]
+id      = 16848
+desc    = 首行错误，首行必须为!system config, 包括换行符"
+desc_en = Head line error. Head line must be \"!system config\
+
+[WAG_ERROR_CODE+465]
+id      = 16849
+desc    = 尾行错误，尾行必须为!end, 包括换行符
+desc_en = End line error. End line must be \"!end\
+
+[WAG_ERROR_CODE+466]
+id      = 16850
+desc    = 缓存加速最大占用缓存未设置
+desc_en = cache record enabl
+
+[WAG_ERROR_CODE+467]
+id      = 16851
+desc    = 缓存加速未申请到足够的空间
+desc_en = no enough space when alloc memory
+
+[WAG_ERROR_CODE+468]
+id      = 16852
+desc    = 缓存加速下发文件类型失败
+desc_en = apply file type error
+
+[WAG_ERROR_CODE+469]
+id      = 16853
+desc    = 虚拟服务无法移动，已经是第一或最后一个
+desc_en = virtual-service order is first or last
+
+[WAG_ERROR_CODE+470]
+id      = 16854
+desc    = 管理口主IP 未设置
+desc_en = No config manager interface master ip
+
+[WAG_ERROR_CODE+471]
+id      = 16855
+desc    = 扫描防护的白名单中没有此IP
+desc_en = This IP is not exist in anti-scan white acl list
+
+[WAG_ERROR_CODE+472]
+id      = 16856
+desc    = 扫描防护的白名单IP个数超过最大限制(10)
+desc_en = Ip number in anti-scan white acl list reached the limit(10)
+
+[WAG_ERROR_CODE+473]
+id      = 16857
+desc    = 扫描防护的白名单中设置了重复的IP
+desc_en = Set Duplicate IP address in anti-scan white acl list
+
+[WAG_ERROR_CODE+474]
+id      = 16858
+desc    = 获取Log Error信息失败
+desc_en = Get Log Error Failed
+
+[WAG_ERROR_CODE+475]
+id      = 16859
+desc    = 获取镜像信息失败
+desc_en = Get Monitor Info Failed
+
+[WAG_ERROR_CODE+476]
+id      = 16860
+desc    = 导入文件出错
+desc_en = Upload Audit Log Failed
+
+[WAG_ERROR_CODE+477]
+id      = 16861
+desc    = 文件头格式错误
+desc_en = Audit Log Header Error
+
+[WAG_ERROR_CODE+478]
+id      = 16862
+desc    = 修改管理口IP失败
+desc_en = Mod Control Port IP Failed
+
+[WAG_ERROR_CODE+479]
+id      = 16863
+desc    = ha心跳口down
+desc_en = HA interface is down
+
+[WAG_ERROR_CODE+480]
+id      = 16864
+desc    = 该接口已被设置成HA接口
+desc_en = Failed, the interface has be set to HA
+
+[WAG_ERROR_CODE+481]
+id      = 16865
+desc    = 虚拟服务中添加的站点安全不存在
+desc_en = WEBSITESAFE NOT EXIST
+
+[WAG_ERROR_CODE+482]
+id      = 16866
+desc    = 系统正在写配置 ，请稍候重启
+desc_en = The system is writting config file, please reboot later
+
+[WAG_ERROR_CODE+483]
+id      = 16867
+desc    = 部署模式和导入的配置文件不匹配
+desc_en = The config file does not match the pattern
+
+[WAG_ERROR_CODE+484]
+id      = 16868
+desc    = 获取桥透传信息失败
+desc_en = Get white-acl information failed
+
+[WAG_ERROR_CODE+485]
+id      = 16869
+desc    = 桥透传策略名称长度超过64字节
+desc_en = The white-acl name length exceeds 64 bytes
+
+[WAG_ERROR_CODE+486]
+id      = 16870
+desc    = 桥透传策略名称已存在
+desc_en = The white-acl name already exists
+
+[WAG_ERROR_CODE+487]
+id      = 16871
+desc    = 桥透传策略已经被删除
+desc_en = The white-acl name has been deleted
+
+[WAG_ERROR_CODE+488]
+id      = 16872
+desc    = 时间更新失败  未指定网关或者dns服务器
+desc_en = Update Failed, invalid host or dns server
+
+[WAG_ERROR_CODE+489]
+id      = 16873
+desc    = 时间更新失败 ! 
+desc_en = Time update Failed
+
+[WAG_ERROR_CODE+490]
+id      = 16874
+desc    = 没有镜像数据! 
+desc_en = NO mirror data
+
+[WAG_ERROR_CODE+491]
+id      = 16875
+desc    = 桥透传策略与IP例外的IP版本不一致
+desc_en = The IP version is not consistent
+
+[WAG_ERROR_CODE+492]
+id      = 16876
+desc    = 桥透传策略IP例外已达到上限
+desc_en = The IP exception has reached the upper limit
+
+[WAG_ERROR_CODE+493]
+id      = 16877
+desc    = 例外IP地址必须属于桥透传策略范围内
+desc_en = The exception ip/port should be in the range of white-acl ip/port
+
+[WAG_ERROR_CODE+494]
+id      = 16878
+desc    = 配置IP例外前需先配置桥透传策略
+desc_en = Please config ip and port of tcp/udp/icmp first
+
+[WAG_ERROR_CODE+495]
+id      = 16879
+desc    = ICMP协议的例外端口需设为0
+desc_en = Port exception should only set 0 when the protocol is ICMP
+
+[WAG_ERROR_CODE+496]
+id      = 16880
+desc    = IP例外已存在
+desc_en = The same exception exsit
+
+[WAG_ERROR_CODE+497]
+id      = 16881
+desc    = 桥透传策略已达到上限
+desc_en = White-acl has reached the upper limit
+
+[WAG_ERROR_CODE+498]
+id      = 16882
+desc    = 
+desc_en = White acl hold
+
+[WAG_ERROR_CODE+499]
+id      = 16883
+desc    = 内存错误
+desc_en = antiflood entry memory error
+
+[WAG_ERROR_CODE+500]
+id      = 16884
+desc    = antiflood防护实体不存在
+desc_en = antiflood entry miss
+
+[WAG_ERROR_CODE+501]
+id      = 16885
+desc    = antiflood防护实体正在被使用
+desc_en = antiflood entry is used
+
+[WAG_ERROR_CODE+502]
+id      = 16886
+desc    = antiflood防护实体已经存在
+desc_en = antiflood entry is existed
+
+[WAG_ERROR_CODE+503]
+id      = 16887
+desc    = antiflood防护实体数量达到上限
+desc_en = antiflood entry count reach limit of max count
+
+[WAG_ERROR_CODE+504]
+id      = 16888
+desc    = antiflood防护实体长度超出上限
+desc_en = antiflood entry exceed length
+
+[WAG_ERROR_CODE+505]
+id      = 16889
+desc    = 防护策略不存在
+desc_en = shield entry is not existed
+
+[WAG_ERROR_CODE+506]
+id      = 16890
+desc    = 地址策略不存在
+desc_en = addr object is not existed
+
+[WAG_ERROR_CODE+507]
+id      = 16891
+desc    = 内存错误
+desc_en = shield entry memory error
+
+[WAG_ERROR_CODE+508]
+id      = 16892
+desc    = 防护策略不存在
+desc_en = shield entry miss
+
+[WAG_ERROR_CODE+509]
+id      = 16893
+desc    = 防护策略正在被使用
+desc_en = shield entry is used
+
+[WAG_ERROR_CODE+510]
+id      = 16894
+desc    = 防护策略已经存在
+desc_en = shield entry is existed
+
+[WAG_ERROR_CODE+511]
+id      = 16895
+desc    = 防护策略数量达到上限
+desc_en = shield entry count reach limit of max count
+
+[WAG_ERROR_CODE+512]
+id      = 16896
+desc    = 不合理配置，超过网页防篡改保护上限
+desc_en = improper config, exceed limit of web-page protection
+
+[WAG_ERROR_CODE+513]
+id      = 16897
+desc    = 存在不可访问的url配置
+desc_en = Inaccessible URL  
+
+[WAG_ERROR_CODE+514]
+id      = 16898
+desc    = 添加的关键字超过规格 
+desc_en = too many http keywords beyond limit  
+
+[WAG_ERROR_CODE+517]
+id      = 16901
+desc    = 该子接口已存在 
+desc_en = vlan interface already existed  
+
+[WAG_ERROR_CODE+518]
+id      = 16902
+desc    = HA口不能修改mtu 
+desc_en = HA interface cannot modify the mtu
+
+[WAG_ERROR_CODE+519]
+id	= 16903
+desc	= 备份文件数目达到上限(上限为5)
+desc_en	= The number of backup files has reached the upper limit
+[WAG_ERROR_CODE+520]
+id	= 16904
+desc	= 扫描结果文件格式有误
+desc_en	= The results of a scan file is not valid
+[WAG_ERROR_CODE+521]
+id	= 16905
+desc	= IP类型与真实服务器类型不一致
+desc_en	= The ip type is not same
+[WAG_ERROR_CODE+522]
+id	= 16906
+desc	= 接口被全局访问控制引用
+desc_en	= Interface is controlled by global access control
+[WAG_ERROR_CODE+523]
+id	= 16907
+desc	= 透明桥被桥透传引用
+desc_en	= Bridge is controlled by bridge transparent transmission
+[WAG_ERROR_CODE+524]
+id	= 16908
+desc	= 虚拟服务数目达到上限
+desc_en	= The number of virtual service has reached the upper limit
+[WAG_ERROR_CODE+526]
+id	= 16910
+desc	= 配置虚拟服务时存在不可加载的算法
+desc_en	= SSL cipher suit can not be load when setup virtual service
+[WAG_ERROR_CODE+527]
+id	= 16911
+desc	= 配置真实服务器时存在不可加载的算法
+desc_en	= SSL cipher suit can not be load when setup real server
+[WAG_ERROR_CODE+528]
+id	= 16912
+desc	= URL对象已经存在
+desc_en	= The url object is already existed
+[WAG_ERROR_CODE+529]
+id	= 16913
+desc	= URL对象不存在
+desc_en	= The url object  doesn't exist
+[WAG_ERROR_CODE+530]
+id	= 16914
+desc	= URL对象数目已到限制值
+desc_en	= The number of url object exceed the limit
+[WAG_ERROR_CODE+531]
+id	= 16915
+desc	= URL对象正在被使用
+desc_en	= The url object is inusing
+
+[WAG_ERROR_CODE+532]
+id      = 16916
+desc    = 已经存在相同的MD5值，请重新设置
+desc_en = Already have the same MD5, please set again
+
+[WAG_ERROR_CODE+533]
+id      = 16917
+desc    = MD5值添加失败
+desc_en = MD5 add failed
+
+[WAG_ERROR_CODE+534]
+id      = 16918
+desc    = MD5值删除失败
+desc_en = MD5 delete failed
+
+[WAG_ERROR_CODE+535]
+id      = 16919
+desc    = MD5值不存在，删除失败
+desc_en = MD5 not exist, delete failed
+
+[WAG_ERROR_CODE+536]
+id      = 16920
+desc    = MD5黑名单数量超过最大限制
+desc_en = MD5 black-list number exceeds limits
+
+[WAG_ERROR_CODE+537]
+id		= 16921
+desc    = MD5白名单数量超过最大限制
+desc_en = MD5 white-list number exceeds limits
+
+[WAG_ERROR_CODE+539]
+id      = 16923
+desc    = 没有硬盘，不能使用该功能
+desc_en = No disk found. Function not be used.
+
+[WAG_ERROR_CODE+540]
+id      = 16924
+desc    = 站点安全已被删除
+desc_en = Security item already deleted 
+
+[20002]
+id      = 20002
+desc    = 只有用户自己或者用户管理员有权限修改用户信息
+desc_en = User info only can be changed by self or admin user 
+
+[20003]
+id      = 20003
+desc    = 用户信息更新失败
+desc_en = User info update error!
+
+[20004]
+id      = 20004
+desc    = 用户创建失败
+desc_en = user create error
+
+[20005]
+id      = 20005
+desc    = 当前用户没有权限创建新用户
+desc_en = Current user can not create user.
+
+[20006]
+id      = 20006
+desc    = 用户删除失败
+desc_en = delete user error
+
+[20007]
+id      = 20007
+desc    = 模板命名冲突
+desc_en = template name collided
+
+[20008]
+id      = 20008
+desc    = 创建模板失败
+desc_en = create template err
+
+[20009]
+id      = 20009
+desc    = 查找模板失败
+desc_en = don't found template
+
+[20010]
+id      = 20010
+desc    = 查找检测项失败
+desc_en = don't found checks
+
+[20011]
+id      = 20011
+desc    = 模板名称不匹配
+desc_en = template name not match
+
+[20012]
+id      = 20012
+desc    = 检测项名称不匹配
+desc_en = check name not match
