@@ -29,10 +29,10 @@ module WebscanApi
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
 #    config.api_only = false
-#    config.api_only = true
+    config.api_only = true
     config.middleware.use ActionDispatch::Cookies
-    config.middleware.use ActionDispatch::Session::CookieStore, key: '_webscan_ip_key'
-#    config.middleware.use ActionDispatch::Session::CacheStore, key: '_webscan_ip_key'
+#    config.middleware.use ActionDispatch::Session::CookieStore, key: '_webscan_ip_key'
+    config.middleware.use ActionDispatch::Session::CacheStore, key: '_webscan_ip_key'
 #    config.middleware.use  Rack::MethodOverride
 #    config.middleware.use ActionDispatch::Session::CacheStore , key:'_webscan_ip_key'
 #    config.session_store :cache_store

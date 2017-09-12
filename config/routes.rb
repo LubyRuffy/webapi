@@ -29,5 +29,7 @@ Rails.application.routes.draw do
   end
   post 'scans/:id', :to =>'scans#update'
 
+  resources :diskchecks, only: [:index, :create]
+
   ############################
 end
