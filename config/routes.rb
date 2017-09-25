@@ -7,8 +7,10 @@ Rails.application.routes.draw do
 #  resources :logout do
 #    get "logout" ,on: :collection 
 #  end
-  resources :users, only: [:index, :create, :show, :destroy] #do 
+  resources :users, only: [:index, :create, :show, :destroy] do 
     #post "delete", on: :collection
+    post "modify_password", on: :collection
+  end
   #each_with_index
   post "users/:id", to: 'users#update'
 
@@ -31,5 +33,6 @@ Rails.application.routes.draw do
 
   resources :diskchecks, only: [:index, :create]
 
+  post 'update_checks', :to => 'updates#update_checks'
   ############################
 end

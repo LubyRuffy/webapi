@@ -23,6 +23,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'activerecord-session_store'
 gem 'dalli'
 gem 'typhoeus'
+gem 'sidekiq'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

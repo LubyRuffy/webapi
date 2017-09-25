@@ -17,47 +17,39 @@ class TemplatesController < ApplicationController
 	#create a new template
 	def create
 		
-		create_params = Hash.new
-		create_params[:name] = params[:name]
-		create_params[:checks] = Array.new
-		params[:checks].each do |tmp|
-			begin
-				check = Check.find(tmp[:id])
-			rescue
-				@err_code = 20010
-				@err_msg = "don't found checks"
-				return
-			end
-			if(check.name != tmp[:name])
-				@err_code = 20012
-				@err_msg = "check name not match"
-				return
-			end
-			create_params[:checks] << tmp[:id]
+		tmp = input_params 1, params
+		if !tmp
+			return
 		end
-		create_params[:ref] = 0
-		@template = Template.new create_params
+		@template = Template.new tmp
 		begin
 			@template.save!
-		rescue ActiveRecord::RecordInvalid
-			@err_code = 20007
-			@err_msg = "template name collided"
-		rescue 
-			@err_code = 20008;
-			@err_msg = "create template err"
-		end
+#		rescue ActiveRecord::RecordInvalid
+#			api_err 20007, "template name collied"
 
+		rescue =>e
+			if e.record.errors.messages[:name].include?("is too long (maximum is 64 characters)")
+				api_err 20021, "template name is too long (maximum is 64 characters)"
+			elsif  e.record.errors.messages[:name].include?("has already been taken")
+				api_err 20007, "template name collied"
+			else
+				api_err 20008, "create template err"
+			end
+		end
 	end
 	
 	#post /templates/delete
 	#create one or more template
 	def delete
 		params[:id].each do |i|
-			begin
-				@template = Template.find(i.to_d)
-			rescue
-				@err_code = 20009
-				@err_msg = "don't found template"
+			@template = Template.get_template i.to_d
+			if !@template
+				api_err 20009, "don't found template"
+				return
+			end
+			
+			if @template.ref > 0
+				api_err 20017,"template ref more than 1"
 				return
 			end
 			@template.destroy
@@ -67,61 +59,73 @@ class TemplatesController < ApplicationController
 	#get /templates/{id}
 	#get one template infomation
 	def show
-		begin
-			@template = Template.find(params[:id])
-		rescue
-			@err_code = 20009
-			@err_msg = "don't found template"
+		@template = Template.get_template params[:id]
+		if !@template
+			api_err 20009, "don't found template"
 			return
 		end
 		
 		@check = Array.new	
 		@template.checks.each do |i|
-			begin
-				Check.find(i.to_d)
-			rescue
-				@err_code = 20010
-				@err_msg = "don't found checks"
-				return
+			tmp = Check.get_check i.to_d
+			if !tmp
+				api_err 20010, "don't found checks"
+				return 
 			end
-			@check << Check.find(i.to_d)
+			@check << tmp
 		end
 		@all = Check.all
 	end
 	
 	#post /templates/{id}
 	#update one template
-	def update	
-		begin
-			@template = Template.find(params[:id])
-		rescue 
-			@err_code = 20009
-			@err_msg = "don't found template"
+	def update
+		@template = Template.get_template params[:id]
+		if !@template
+			api_err 20009, "don't found template"
 			return
 		end
 		
 		if(@template.name != params[:name])
-			@err_code = "20011"
-			@err_msg = "template name not match"
+			api_err 20011, "template name not match"
 			return
-		else
-			update_params = Array.new
-			params[:checks].each do |tmp|
-				begin 
-					check = Check.find tmp[:id]
-				rescue
-					@err_code = 20010
-					@err_msg = "don't found checks"
-					return
-				end
-				if(check.name != tmp[:name])
-					@err_code = 20012
-					@err_msg = "check name not match"
-					return
-				end
-				update_params << tmp[:id]
-			end
-			@template.update_attributes(:checks=>update_params)
 		end
+		if @template.ref > 0
+			api_err 20017,"template ref more than 1"
+			return
+		end
+
+		update_params = input_params 2, params
+		if !update_params
+			return
+		end
+		@template.update_attributes(update_params)
 	end
+	
+	private
+
+	#used for create or update  
+	#flag:1 for create, 2 for update 
+	def input_params(flag, params)
+		create = Hash.new
+		if flag == 1
+			create[:name] = params[:name]
+			create[:ref] = 0
+		end
+		create[:checks] = Array.new
+		params[:checks].each do |tmp|
+			check = Check.get_check tmp[:id]
+			if !check
+				api_err 20010, "don't found checks"
+				return
+			end
+			if(check.name != tmp[:name])
+				api_err 20012, "check name not match"
+				return
+			end
+			create[:checks] << tmp[:id]
+		end
+		return create
+	end
+
 end

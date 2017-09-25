@@ -7,7 +7,7 @@ module TyphoeusRequest
   URL = 'http://' + host + ':' + port.to_s
 
   def _request( path = 'scans', options = {} ) # can't named 'request' , conflict with rails's request.
-    if (data = options.delete(:data))
+	if (data = options.delete(:data))
       options[:body] = JSON.dump( data )
     end
 
@@ -26,8 +26,11 @@ module TyphoeusRequest
     end
 
     fail response.return_message if response.code == 0
-
-    JSON.load( response.body )
+	if response.code == 404
+	  response.body
+	else
+      JSON.load( response.body )
+	end
   end
 
   def get( path )
@@ -38,7 +41,7 @@ module TyphoeusRequest
     _request( path, data: data, method: :post )
   end
 
-  def delete( path )
+  def _delete( path )
     _request( path, method: :delete )
   end
 
@@ -90,7 +93,7 @@ module TyphoeusRequest
 
   # return null.
   def delete_scans_task(id=0)
-    delete "scans/#{id}"
+    _delete "scans/#{id}"
   end
 
   # return true or false

@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  before_action :session_timeout?
+#  before_action :require_login
   
   def index
     #render json: User.all
@@ -17,6 +17,8 @@ class UsersController < ApplicationController
     @user = User.new(create_params)
 
     #@user.save
+    # @user.save || api_err(20004, 'user create error')
+    # api_err(20004, 'user create error') unless @user.save
     if !@user.save
       api_err 20004, 'user create error'
     end
@@ -53,8 +55,33 @@ class UsersController < ApplicationController
     @user =  user_can_change_info? 
     if !@user
       api_err 20002, "User info only can be changed by self or admin user"
+      return 
     elsif !@user.update_attributes(update_params)
       api_err 20003, "User info update error!"
+      return
+    end
+  end
+
+  def modify_password
+#    logger.info("user: #{params[:username]}")
+    logger.info("cookie #{response.headers}")
+    @user = User.find_by(username: params[:username])
+    if !@user
+      api_err(86, 'User does not exist')
+      return
+    end
+
+    if @user.password != params[:old_password]
+      #logger.info("para: #{params[:old_password]}, user:")
+      api_err 147, 'Old password is wrong'
+      return
+    end
+
+    @user.password = params[:new_password]
+    begin 
+      @user.save
+    rescue e
+      logger.error('#{e}')
     end
   end
 

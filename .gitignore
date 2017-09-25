@@ -21,3 +21,5 @@
 
 /gems/*
 /vender/
+/.svn/
+Gemfile.lock

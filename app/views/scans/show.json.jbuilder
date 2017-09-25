@@ -17,15 +17,12 @@ json.data do
 		json.login_plugin do
 			json.enble @scan.login_setting.to_s
 			json.type @scan.login_type
-			if @scan.login_type == 1
-				json.user_pass do
-					json.url @scan.login_url
-					json.username @scan.http_authentication_username
-					json.password @scan.http_authentication_password
-				end
-			else 
-				json.cookie @scan.http_cookies
+			json.user_pass do
+				json.url @scan.login_url
+				json.username @scan.http_authentication_username
+				json.password @scan.http_authentication_password
 			end
+			json.cookie @scan.http_cookies
 		end
 		json.crawl do
 			json.enable @scan.spider_setting.to_s

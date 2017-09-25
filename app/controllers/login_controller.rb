@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+  skip_before_action :require_login, only:[ :create ], raise: false
 
   def create
     @username = params[:username]
@@ -19,8 +20,8 @@ class LoginController < ApplicationController
       end
 
     else
-      @err_code = 267
-      @err_msg = 'Failed to authen'
+      @err_code = 266
+      @err_msg = 'Password is incorrect'
     end
   end
 end

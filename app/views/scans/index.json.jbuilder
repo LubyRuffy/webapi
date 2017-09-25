@@ -7,5 +7,9 @@ json.data do
 		json.name tmp.name
 		json.root_id tmp.root_id.to_s
 		json.template tmp.checks_id.to_s
+		json.status tmp.status
+		json.started_at tmp.started_at
+		json.finished_at tmp.finished_at
+		json.statistics tmp.statistics
 	end
 end

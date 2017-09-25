@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::API
 #  attr_accessor :sessions 
+  before_action :require_login
   
   @@session_cache = {}
   def initialize
@@ -17,8 +18,8 @@ class ApplicationController < ActionController::API
     session[s] = nil 
   end
 
-  # session_timeout?
-  def session_timeout?
+  # require_login
+  def require_login
     session_info = request.query_parameters[:session]
     to_flag = true
     logger.info("session_cache = #{session[session_info]}")
