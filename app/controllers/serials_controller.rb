@@ -27,7 +27,9 @@ class SerialsController < ApplicationController
   end
 
   def get_mac
-    `ifconfig | grep ether | awk '{print $2}' | sed 's/://g'`
+#    inface = `sudo networkctl 2> /dev/null | grep ether | awk '{print $2}'`
+    inface = get_ether_interface
+    `cat /sys/class/net/#{inface.strip}/address`
   end
 
   def get_uuid

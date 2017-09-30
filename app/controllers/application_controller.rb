@@ -45,4 +45,9 @@ class ApplicationController < ActionController::API
     render json: {err_code: err_code, err_msg:  err_msg}
     return
   end
+
+  def get_ether_interface
+    inface = `sudo networkctl 2> /dev/null | grep ether | awk '{print $2}'`                                              
+    inface.strip.chomp
+  end
 end
