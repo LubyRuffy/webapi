@@ -16,6 +16,14 @@ class SerialsController < ApplicationController
 
     @serial = "012000" + crc32.to_s
     logger.info("serial: #{@serial}")
+
+    @dev_serial = Serial.first
+    if !@dev_serial 
+      @dev_serial = Serial.new
+
+      @dev_serial.serial = @serial
+      @dev_serial.save
+    end
   end
 
   private 
@@ -27,7 +35,6 @@ class SerialsController < ApplicationController
   end
 
   def get_mac
-#    inface = `sudo networkctl 2> /dev/null | grep ether | awk '{print $2}'`
     inface = get_ether_interface
     `cat /sys/class/net/#{inface.strip}/address`
   end
