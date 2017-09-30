@@ -61,7 +61,7 @@ class FileEncodeDecode
     rescue => e
       raise e
     ensure
-      fp.close
+      fp.close if fp
     end
   end
 
@@ -77,6 +77,8 @@ class FileEncodeDecode
       fp.close if fp
       return false
     end
+
+    fp.close if fp
 
     de_content = decrypt_by_password( content)
 
@@ -98,6 +100,8 @@ class FileEncodeDecode
       fp.close if fp
       return false
     end
+
+    fp.close if fp
 
     true
   end

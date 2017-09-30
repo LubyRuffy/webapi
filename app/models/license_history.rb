@@ -1,0 +1,2 @@
+class LicenseHistory < ApplicationRecord
+end

@@ -1,5 +1,5 @@
 class UpdatesController < ApplicationController
-  skip_before_action :require_login, raise: false
+#  skip_before_action :require_login, raise: false
 #  skip_before_action :require_login
 
   def update_checks
@@ -9,7 +9,7 @@ class UpdatesController < ApplicationController
     ret = file.unpack_file(check_gz)
 
     if ret == false
-      api_err(20002, 'update checks error')
+      api_err(20022, 'update checks error')
       return
     end
 
@@ -20,7 +20,7 @@ class UpdatesController < ApplicationController
     # Get the name of checks from the file 
     conf_file = '/tmp/checks_name'
     if !File.exist?(conf_file)
-      api_err(20002, 'update checks error')
+      api_err(20022, 'update checks error')
       return
     end
 
@@ -31,8 +31,8 @@ class UpdatesController < ApplicationController
 
     # Read the conf file , then add the checks name into database.
     if read_conf_and_add_into_db(conf_file) == false
-      api_err(20002, 'update checks error')
-      recover_plugin(plugin_backup)
+      api_err(20022, 'update checks error')
+      recover_plugin(plugin_backup)   # If update error, recover the checks before.
       return
     end
 

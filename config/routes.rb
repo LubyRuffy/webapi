@@ -34,5 +34,16 @@ Rails.application.routes.draw do
   resources :diskchecks, only: [:index, :create]
 
   post 'update_checks', :to => 'updates#update_checks'
+
+  resources :network_config, only: [:index, :create]
+  resources :dns_config, only: [:index, :create] do 
+    post :dns_test, on: :collection
+  end
+
+  resources :licenses, only:[:index, :create] do 
+    get :activate, on: :collection 
+  end
+
+  resources :serials, only:[:index]
   ############################
 end

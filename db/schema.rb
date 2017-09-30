@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170909084327) do
+ActiveRecord::Schema.define(version: 20170930024952) do
 
   create_table "checks", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "name"
@@ -63,6 +63,22 @@ ActiveRecord::Schema.define(version: 20170909084327) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "license_histories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string "license"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "licenses", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string "license"
+    t.datetime "valid_time"
+    t.datetime "activate_time"
+    t.datetime "expired_time"
+    t.boolean "activated"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "plugins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "name"
     t.integer "checks_id"
@@ -108,6 +124,12 @@ ActiveRecord::Schema.define(version: 20170909084327) do
     t.text "scope_exclude_path_patterns"
     t.text "scope_exclude_content_patterns"
     t.text "scope_extend_paths"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "serials", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.string "serial"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

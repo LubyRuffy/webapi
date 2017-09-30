@@ -24,6 +24,8 @@ gem 'activerecord-session_store'
 gem 'dalli'
 gem 'typhoeus'
 gem 'sidekiq'
+gem 'ipaddress'
+gem 'venus_crc32'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
