@@ -54,3 +54,5 @@ end
 
 Diskcheck.create(db_limit: 1, report_limit:2)
 
+License.create(license:'', valid_time: '', activate_time: '', expired_time: '', activated: false)
+
