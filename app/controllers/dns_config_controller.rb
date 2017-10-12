@@ -1,7 +1,7 @@
 class DnsConfigController < ApplicationController
   require 'resolv' 
 #  require 'ipaddress'
-#  skip_before_action :require_login
+  skip_before_action :require_login
 
   def index
     begin 
@@ -72,10 +72,39 @@ class DnsConfigController < ApplicationController
       return
     end
 
+    if !params[:dns1] && !params[:dns2]
+      api_err(248, "Dns server is empty")
+      return 
+    end
+
+    dns = []
+
+    if params[:dns1]
+      dns[0] = params[:dns1]
+      if params[:dns2]
+        dns[1] = params[:dns2]
+      end
+    else 
+      if params[:dns2]
+        dns[0] = params[:dns2]
+      end
+    end
+
+    #dns[0] = params[:dns1] if params[:dns1]
+    #dns[1] = params[:dns2] if params[:dns2]
+
+    logger.info("test dns #{dns}")
     begin 
-      @ip = Resolv.getaddress(params[:domain])
+      #@ip = Resolv.getaddress(params[:domain])
+      Resolv::DNS.open({:nameserver=>dns}) do |r|
+        r.timeouts = 5
+        @ip = r.getaddress(params[:domain])
+      end
+      @ip = @ip.to_s
     rescue => e
       logger.error("get address error => #{e}")
+      api_err(125, "Test dns server failed")
+      return
     end
   end
 end
